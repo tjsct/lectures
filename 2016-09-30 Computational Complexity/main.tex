@@ -1,0 +1,73 @@
+\documentclass[letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{algorithm}
+
+\title{Computational Complexity}
+\author{Charles Zhao}
+\date{September 30, 2016}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+The \emph{computational complexity} of an algorithm is a measure of its efficiency. It is the amount of time (\emph{time complexity}) or space (\emph{space complexity}) an algorithm takes to run as a function of the size of the input.
+
+\section{Asymptotic Computational Complexity}
+Asymptotic computational complexity is the most common way we estimate the complexity of algorithms. There are two important simplifications asymptotics use: if an algorithm's exact complexity is $f(n)$ where $n$ is the input size, then (1) if $f(n)$ is a sum of several terms, only the term with the largest order is considered, and (2) if $f(n)$ is a product of several factors, any constants are omitted. Usually when we talk about an algorithm's complexity, we are referring to the upper bound of the algorithm's asymptotic computational complexity (denoted by big O notation). However, other types of asymptotic estimates include the lower bound (denoted by big omega notation) and a function that is both the upper and lower bound (denoted by big theta notation). Here are their formal definitions:
+\begin{itemize}
+\item $f(n) = O(g(n))$ if $f(n) \le c \cdot g(n) \;\forall\; n>n_{0} \wedge c>0 $
+\item $f(n) = \Omega (g(n))$ if $f(n) \ge c \cdot g(n) \;\forall\; n>n_{0} \wedge c>0$
+\item $f(n) = \theta (g(n))$ if $f(n) \le c_{1} \cdot g(n) \wedge f(n) \ge c_{2} \cdot g(n) \;\forall\; n>n_{0} \wedge c_{1}>0 \wedge c_{2}>0$
+\end{itemize}
+
+\section{Common Complexities}
+\begin{itemize}
+\item $O(1)$ - constant
+\item $O(\log n)$ - logarithmic
+\item $O(n)$ - linear
+\item $O(n^{2})$ - quadratic
+\item $O(n^{3})$ - cubic
+\item $O(2^{n})$ - exponential
+\end{itemize}
+
+\pagebreak
+\section{Example}
+What is the time complexity of \verb RabinKarp ?
+\begin{algorithm}
+\caption{Rabin-Karp}
+\begin{verbatim}
+function RabinKarp(string s[1..n], stringSet searchStrs, int m):
+    set hashedSearchStrs = emptySet
+    foreach string in searchStrs
+        insert hash(string[1..m]) into hashedSearchStrs
+    hashedSub = hash(s[1..m])
+    for i = 1 to n-m+1
+        if hashedSub in hashedSearchStrs and s[i..i+m-1] in searchStrs
+            return i
+        hashedSub = hash(s[i+1..i+m])
+    return not found
+
+function hash(string key, int M) 
+    hash = 0
+    for int j = 0 to M-1
+        h = (R * h + key[j])
+    return h
+\end{verbatim}
+\end{algorithm}
+
+\section{Contests Cheat Sheet}
+In USACO, for each test case, you are given 1 second for C++ and 2 seconds for Java. Your programs are run on machines that do approximately $10^{8}$ operations per second. Based on the input size bounds given to you, here are around the complexities your programs should be:
+\begin{itemize}
+\item $N \le 10: O(N!)$
+\item $N \le 25: O(2^{N})$
+\item $N \le 50: O(N^{4})$
+\item $N \le 500: O(N^{3})$
+\item $N \le 5000: O(N^{2})$
+\item $N \le 100000: O(N \log N)$
+\item $N \le 1000000: O(N)$
+\end{itemize}
+
+
+\end{document}

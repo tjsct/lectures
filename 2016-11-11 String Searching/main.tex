@@ -1,0 +1,131 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\algnewcommand\Or{\textbf{ or }}
+\algnewcommand\And{\textbf{ and }}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+\title{String Searching}
+\author{Larry Wang and Charles Zhao}
+\date{November 11, 2016}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+The problem of string searching is as follows: find an occurrence (or all occurrences) of a pattern string of length $N$ within a text string of length $M$. A naive brute-force solution would be to consider every character in the text as the starting character of the pattern. Although this solution does not require any precomputation, it has a time complexity of $O(NM)$, which is undesirable in many cases. 
+
+
+\section{Knuth-Morris-Pratt}
+The problem with the brute-force solution is that whenever we find a mismatch, we have to backtrack our position in the text string. This is similar to "forgetting" the last few characters we matched and simply starting the search over again. KMP allows us to effectively avoid backtracking in the text string to improve the running time. 
+
+To see how this works, supposed we found a mismatch at index $j$ in the pattern string. Now consider the substring $substr := \texttt{pattern[0, j]}$. We know that the last $j$ characters in the text match $substr$ exactly. If $substr$ has a proper suffix of length $l$ that is also a prefix of $substr$, then we can then align the last $l$ characters in the text with the first $l$ characters in the pattern and continue our search without backtracking. If $substr$ does not have a suffix that is also a prefix, then we can just restart our search beginning at the character of the mismatch. 
+
+To actually implement this, we must compute the partial match table (or failure function) \texttt{T}, where \texttt{T[i]} is the length of the longest suffix that is also a prefix of \texttt{pattern[0, i]}. We also define \texttt{T[0]} to be $-1$. To compute \texttt{T} efficiently, we note that the longest suffix of \texttt{pattern[0, i]} must be a suffix of \texttt{pattern[0, i-1]} with \texttt{pattern[i]} appended. Furthermore, we have already computed all of the suffixes that are also prefixes up to index $i$. The following psuedocode accomplishes the table construction algorithm. Notice that the maximum iterations of the loop is $2M$ ($j$ is only incremented when $i$ is incremented, so the number of times the second case occurs is bounded by $M$), so the table construction is $O(M)$. 
+
+\begin{algorithm}[H]
+\caption{KMP Table Construction}
+\begin{algorithmic}
+    \Function{table}{$pattern$, $T$}
+        \State $i \gets 1$ \Comment{$i$ is the current position in the pattern}
+        \State $j \gets 0$ \Comment{$j$ is the last character of a prefix that is also a suffix}
+        \State $T[0] \gets -1$
+        \While{$i < len(pattern)$}
+            \If{$pattern[i-1] = pattern[j]$}
+                \State $T[i] \gets j+1$
+                \State $j \gets j+1$
+                \State $i \gets i+1$
+            \ElsIf{$j > 0$}
+                \State $j \gets T[j]$
+                \State $T[j] \gets 0$
+            \Else
+                \State $T[i] \gets 0$
+                \State $i \gets i+1$
+            \EndIf
+        \EndWhile
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+To actual find occurrences of the pattern in the text, we store positions in the text and pattern. If a match occurs, then we increment both pointers. Otherwise, we reset the pattern pointer to its longest suffix that is also a prefix using the partial match table. The following pseudocode describes this process. We return the position that the match was found, or $-1$ if no match was found. The maximum number of iterations of the loop is $2N$ (by a similar argument as above), so the complexity is $O(N)$. 
+
+\begin{algorithm}[H]
+\caption{KMP Search}
+\begin{algorithmic}
+    \Function{search}{$pattern$, $text$, $T$}
+        \State $i \gets 0$ \Comment{$i$ is the position of the beginning of the match in the text}
+        \State $j \gets 0$ \Comment{$j$ is the position in the pattern}
+        \While{$i+j < len(text)$} 
+            \If{$pattern[j] = text[i+j]$} 
+                \If {$j = len(pattern)-1$} 
+                    \State \Return $i$
+                \Else
+                    \State $j \gets j+1$
+                \EndIf
+            \Else
+                \If{$T[j] > -1$}
+                    \State $i \gets i+j-T[j]$
+                    \State $j \gets T[j]$
+                \Else
+                    \State $i \gets i+1$
+                    \State $j \gets 0$
+                \EndIf
+            \EndIf
+        \EndWhile
+        \State \Return $-1$
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+It's also worth nothing that constructing the partial math table is equivalent to constructing a deterministic finite state automata, which we can think of as a collection of states and links between these states. A link pointing "forward" represents a successful match and a link falling "backwards" represents which state to go to after encountering a mismatch. The algorithm to search the text is equivalent to simulating the DFA . 
+
+Putting this all together, the final complexity of KMP is $O(N+M)$, which is clearly much better than the brute-force solution. 
+
+
+\section{Rabin-Karp}
+The Rabin-Karp algorithm uses hashing to efficiently search for one or more strings in a text simultaneously. Whereas each string comparison in the naive approach runs in linear time, Rabin-Karp uses hashing to bring this down to constant time. To do this, the hashing algorithm must be able to efficiently (i.e. in constant time) compute the hash for position $i+1$ in the text string given the hash for position $i$. We define the hash of the substring starting at position $i$ as
+
+$$x_i = t_{i}R^{N-1} + t_{i+1}R^{N-2} + \ldots + t_{i+N-1}R^0$$
+
+\noindent where $t_i$ represents the character at position $i$ within the text string and $R$ is some prime number. This operation runs in $O(N)$, which is linear. However, we only need to perform this operation once. Because of the way we have defined the hash function, we know that
+
+$$x_{i+1} = (x_i - t_{i}R^{N-1})R + t_{i+N}$$
+
+\noindent which runs in constant time. This operation subtracts the first character's contribution to the hash, multiplies by $R$, and then adds the new character. To account for hash collisions, we still must perform a linear-time character-by-character comparison when we find a hash match, but this occurs much less frequently than in the naive approach. Although Rabin-Karp has a worst case time complexity of $O(NM)$, which would occur if there were a hash collision at every substring, in practice, it runs in $O(N+M)$. Rabin-Karp is best when searching for multiple pattern strings of the same length, whereas KMP is generally faster when searching for a single pattern string. In the pseudocode below, since the hashes may be quite large, we $\bmod$ the results by a large prime number $Q$. 
+
+\begin{algorithm}[H]
+\caption{Rabin-Karp}
+\begin{algorithmic}
+    \Function{Hash}{$p$, $N$}
+        \State $h \gets 0$
+        \For{$i = 0 \ldots N-1$}
+            \State $h \gets (R \times h + p[i])\ \%\ Q$
+        \EndFor
+        \State \Return $h$
+    \EndFunction
+    \Function{RabinKarp}{$s$, $patterns$, $N$}
+        \State $hashedPatterns \gets emptySet$
+        \ForEach{$p \in patterns$}
+            \State $\Call{Add}{p,\ hashedPatterns}$
+        \EndFor
+        \State $x \gets \Call{Hash}{s[0 \ldots N-1],\ N}$
+        \If{$x \in hashedPatterns \And s[0 \ldots N-1] \in patterns$}
+            \State \Return 0
+        \EndIf
+        \For{$i = N \ldots M-1$}
+            \State $x \gets (x - R^{N-1} \times s[i-N]\ \%\ Q)\ \%\ Q$ \Comment{subtract contribution from first character}
+            \State $x \gets (x \times R + s[i])\ \%\ Q$ \Comment{add next character}
+            \If{$x \in hashedPatterns \And s[i \ldots i+N-1] \in patterns$}
+                \State \Return $i$
+            \EndIf
+        \EndFor
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}
