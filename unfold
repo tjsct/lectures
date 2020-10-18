@@ -1,0 +1,26 @@
+#!/usr/bin/env fish
+# simple shell utilty to make it convenient to unzip Overleaf exports
+
+function parse --description "makes a folder for each zip file"
+  set tokens (string split "/" -- $argv[1])
+  set path (string join "/" -- $tokens[1..-2])
+  # move to folder root
+  set original (pwd)
+  cd "$path"
+  set folder (string split ".zip" -- $tokens[-1])[1]
+  set fname "$folder.zip"
+ 
+  mkdir "$folder"
+  mv "$fname" "$folder"
+  cd "$folder"
+  unzip "$fname" 
+  rm "$fname"
+  
+  # go back to original path
+  cd "$original"
+end
+
+for path in $argv
+  parse "$path"
+end
+

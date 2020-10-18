@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Standard Data Structures: Sets and Maps}
+\author{ICT and SCT Captains}
+\date{October 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+    Most programming languages come with built-in data structures that are useful in competitive programming. Of those data structures, this lecture will go over sets and maps. 
+    
+\section{Sets}
+    A set is a data structure that allows quick random access, addition, and removal of values, but can't contain repeats of items.
+\subsection{Unordered Sets}
+    Unordered Sets(HashSet in java) use hashing to allow very quick access to elements. The downside is that we don't know the order of the elements in the set.
+    \newline 
+    \newline
+    Effciencies: 
+    \begin{itemize}
+        \item Adding a value: $O(1)$
+        \item Removing a value: $O(1)$
+        \item Checking if the set contains a value: $O(1)$
+        \item Looping through the set: $O(N)$
+    \end{itemize}
+    
+\subsection{Ordered Sets}
+    Ordered Sets(TreeSet in java) use a binary search tree to allow quick access to elements. Values in the set are kept in sorted order.
+    \newline 
+    \newline
+    Effciencies: 
+    \begin{itemize}
+        \item Adding a value: $O(log(N))$
+        \item Removing a value: $O(log(N))$
+        \item Checking if the set contains a value: $O(log(N))$
+        \item Finding the smallest or largest value: $O(log(N))$
+        \item Finding the smallest value bigger than a given value: $O(log(N))$
+        \item Finding the largest value smaller than a given value: $O(log(N))$
+        \item Looping through the set: $O(N)$
+    \end{itemize}
+
+\section{Maps}
+    Maps are like set, but instead of storing values, we store keys. Each key "maps", or is linked to a value, and we must access values using their keys. Like in sets, keys can't repeat. However, the values the keys map to can.
+\subsection{Unordered Maps}
+    Unordered Maps(HashMaps in java) are pretty much just the map version of an unordered set.
+    \newline 
+    \newline
+    Effciencies: 
+    \begin{itemize}
+        \item Adding a key-value pair: $O(1)$
+        \item Removing a key-value pair: $O(1)$
+        \item Updating a key-value pair: $O(1)$
+        \item Checking if the map contains a key: $O(1)$
+        \item Checking if the map contains a value: $O(N)$
+        \item Getting the value for a certain key; $O(1)$
+        \item Looping through the map: $O(N)$
+    \end{itemize}
+    
+\subsection{Ordered Sets}
+    Ordered Maps(TreeMaps in java) are like their set counterparts. Keys are kept in sorted order.
+    \newline 
+    \newline
+    Effciencies: 
+    \begin{itemize}
+        \item Adding a key-value pair: $O(log(N))$
+        \item Removing a key-value pair: $O(log(N))$
+        \item Updating a key-value pair: $O(log(N))$
+        \item Checking if the map contains a key: $O(log(N))$
+        \item Checking if the map contains a value: $O(N)$
+        \item Getting the value for a certain key; $O(1)$
+        \item Finding the smallest or largest key: $O(log(N))$
+        \item Finding the smallest key bigger than a given key: $O(log(N))$
+        \item Finding the largest key smaller than a given key: $O(log(N))$
+        \item Looping through the map: $O(N)$
+    \end{itemize}
+
+\section{Multisets and Multimaps}
+    If you code in C++, there are versions of set and map that allow you to repeat values(Multiset and Multimap respectively). In java, there is no such data structure, but we can emulate a multiset using a map where the key stores the value and the value the key maps to store the number of times it occurs.
+
+\section{Practice Problems}
+    \begin{itemize}
+        \item USACO 2015 January Contest, Silver: Stampede
+        \item USACO 2015 December Contest, Platinum: High Card Low Card
+    \end{itemize}
+
+\end{document}

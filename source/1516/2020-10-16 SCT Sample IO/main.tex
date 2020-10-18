@@ -1,0 +1,283 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage[hyperfootnotes=false]{hyperref}
+\usepackage{exercise}
+
+\usepackage{verbatim}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+
+\usepackage[toc,page]{appendix}
+
+\usepackage[secthm,mdthm]{evan}
+
+\lhead{SCT Officers}
+
+\usepackage{graphicx}
+
+\usepackage{color}
+
+\begin{comment} % for black and white printing; see below
+\definecolor{myseagreen}{RGB}{88,197,191}
+\definecolor{mysalmon}{RGB}{255,160,122}
+\definecolor{myred}{RGB}{255,102,102}
+\definecolor{mypurple}{RGB}{225,145,255}
+\end{comment}
+\definecolor{myblack}{RGB}{0,0,0}
+\definecolor{mywhite}{RGB}{255,255,255}
+
+% for black and white printing
+\definecolor{myseagreen}{rgb}{1.0,1.0,1.0}
+\definecolor{mysalmon}{rgb}{1.0,1.0,1.0}
+\definecolor{myred}{rgb}{1.0,1.0,1.0}
+\definecolor{mypurple}{rgb}{1.0,1.0,1.0}
+
+\usepackage{tikz}
+
+\usetikzlibrary{calc,shapes.multipart,chains,arrows,positioning}
+
+\tikzstyle{vertex}=[draw,fill=myseagreen,circle,minimum size=24pt,inner sep=0pt]
+
+\tikzstyle{splitvertex}=[draw,fill=myseagreen,circle split,minimum size=24pt]
+
+\usetikzlibrary{
+  shapes.multipart,
+  matrix,
+  positioning,
+  shapes.callouts,
+  shapes.arrows,
+  shapes.geometric,
+  decorations.shapes,
+  shapes,
+  fit,
+  arrows,
+  positioning,
+  trees,
+  mindmap,
+  calc}
+
+\tikzset{
+    squarecross/.style={
+        draw, rectangle,minimum size=18pt, fill=myseagreen,
+        inner sep=0pt, text=black,
+        path picture = {
+            \draw[black]
+            (path picture bounding box.north west) -- 
+            (path picture bounding box.south east)
+            (path picture bounding box.south west) -- 
+            (path picture bounding box.north east);
+        }
+    }
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+% \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{backcolour}{rgb}{1,1,1}
+
+\lstnewenvironment{mylstlisting}[1][]%
+  {\noindent\minipage{\linewidth}\medskip 
+   \lstset{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4,
+   basicstyle=\ttfamily\footnotesize,
+   frame=single,#1}}
+  {\endminipage}
+
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+\renewcommand{\arraystretch}{1.5}
+
+\title{Sample I/O}
+\author{SCT Officers}
+\date{October 2015}
+
+\begin{document}
+
+\maketitle
+
+The following are some I/O examples in various languages to get you started.
+
+All programs read in a number $N$ from the first line, proceed to read in $N$ more numbers from the second line, and print their sum.
+
+Sample input:
+
+\begin{verbatim}
+4
+1 3 5 8
+\end{verbatim}
+
+Sample output:
+
+\begin{verbatim}
+17
+\end{verbatim}
+
+\section{Java}
+
+\lstset{language=Java}
+
+Here I use a \texttt{BufferedReader} instead of a \texttt{Scanner}. It's much faster and much more reliable in the contest environment.
+
+\subsection{Standard I/O}
+
+\begin{mylstlisting}
+import java.util.*;
+import java.io.*;
+
+class sum {
+    public static void main(String[] args) throws IOException {
+        BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
+	    int N = Integer.parseInt(f.readLine()); // read whole line
+	    int[] num = new int[N];
+	    StringTokenizer st = new StringTokenizer(f.readLine()); // split line by white space
+    	for(int k = 0; k < N; ++k) {
+    		num[k] = Integer.parseInt(st.nextToken());
+    	}
+    	int sum = 0;
+    	for(int k = 0; k < N; ++k) {
+    		sum += num[k];
+    	}
+    	System.out.println(sum);
+    	System.exit(0);
+    }
+}
+\end{mylstlisting}
+
+\subsection{File I/O}
+
+\begin{mylstlisting}
+import java.util.*;
+import java.io.*;
+
+class sum {
+    public static void main(String[] args) throws IOException {
+        BufferedReader f = new BufferedReader(new FileReader("sum.in"));
+		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("sum.out")));
+	    int N = Integer.parseInt(f.readLine()); // read whole line
+	    int[] num = new int[N];
+	    StringTokenizer st = new StringTokenizer(f.readLine()); // split line by white space
+    	for(int k = 0; k < N; ++k) {
+    		num[k] = Integer.parseInt(st.nextToken());
+    	}
+    	int sum = 0;
+    	for(int k = 0; k < N; ++k) {
+    		sum += num[k];
+    	}
+    	out.println(sum);
+    	out.close(); // don't forget this!
+    	System.exit(0);
+    }
+}
+\end{mylstlisting}
+
+\section{C++}
+
+\lstset{language=C++}
+
+Here I will use C++-style I/O. If you prefer C-style I/O, that's fine too.
+
+\subsection{Standard I/O}
+
+The first two lines here are to speed up input. They are considered bad coding practice outside of the contest environment but are essential to get your times down if I/O is large. Note, however, that if you unlink with C-style I/O, you may not use \texttt{scanf()} and \texttt{printf()}, etc. Bad things will happen.
+
+\begin{mylstlisting}
+#include <iostream>
+#include <fstream>
+
+int num[100005];
+
+int main() {
+    std::ios_base::sync_with_stdio(0); // unlink C-style I/O
+    std::cin.tie(0); // unlink std::cout
+	std::cin >> N;
+	for(int k = 0; k < N; ++k) {
+		std::cin >> num[k];
+	}
+	int sum = 0;
+	for(int k = 0; k < N; ++k) {
+		sum += num[k];
+	}
+	cout << sum << "\n";
+	return 0;
+}
+\end{mylstlisting}
+
+\subsection{File I/O}
+
+\begin{mylstlisting}
+#include <iostream>
+#include <fstream>
+
+int num[100005];
+
+int main() {
+	std::ifstream fin("palpath.in");
+	std::ofstream fout("palpath.out");
+	fin >> N;
+	for(int k = 0; k < N; ++k) {
+		fin >> num[k];
+	}
+	int sum = 0;
+	for(int k = 0; k < N; ++k) {
+		sum += num[k];
+	}
+	fout << sum << "\n";
+	fin.close();
+	fout.close(); // don't forget this!
+	return 0;
+}
+\end{mylstlisting}
+
+\section{Python}
+
+\lstset{language=Python}
+
+\subsection{Standard I/O}
+
+\begin{mylstlisting}
+n = int( input() ) # input() grabs the whole line
+nums = input().strip() # removes extra spaces at beginning and end, also \n
+nums = nums.split() # splits at the spaces to turn it into an array of strings
+nums = [int(stng) for stng in nums] #turn them into ints
+print( sum( nums ) )
+\end{mylstlisting}
+
+\subsection{File I/O}
+
+\begin{mylstlisting}
+file = open('input.txt', 'r') # r for read
+out = open('output.txt', 'w') # w for write
+
+n = int(file.readline().strip()) # strip() isn't always necessary, but it's a good habit
+nums = file.readline().strip()
+nums = nums.split() # splits at the spaces to turn it into an array of strings
+nums = [int(stng) for stng in nums] #turn them into ints
+out.write( str( sum( nums ) ) + '\n' ) # str() and + are necessary because write() takes only a single string
+
+file.close()
+out.close()
+\end{mylstlisting}
+
+\end{document}

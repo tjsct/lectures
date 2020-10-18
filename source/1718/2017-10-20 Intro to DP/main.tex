@@ -1,0 +1,157 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\algnewcommand\Or{\textbf{ or }}
+\algnewcommand\Init{\textbf{initialize }}
+\MakeRobust{\Call}
+
+\title{Introduction to Dynamic Programming}
+\author{Srinidhi Krishnamurthy \\Based on Charles Zhao's Lecture}
+\date{October 20, 2017}
+
+\begin{document}
+
+
+\maketitle
+
+
+\begin{center}
+    \textit{``Unfortunately, programmer, no one can be\\ told what DP is.
+You have to try it for yourself."}\\
+    \medskip
+    -- Stolen from and old SCT lecture that stole it from an older SCT lecture that stole it from\\ an even older SCT lecture that adapted it from \textit{The Matrix}
+\end{center}
+
+
+\section{Introduction}
+\textit{Dynamic Programming} (DP) is a technique for reducing the runtime of certain kinds of problems. A problem that can be solved using DP must satisfy two prerequisites:
+\begin{enumerate}
+    \item It must have \textit{optimal substructures}: The solution to the subproblem is part of the solution to the original problem.
+\item It must have \textit{overlapping subproblems}: The solutions to subproblems are used repeatedly.
+\end{enumerate}
+
+
+\section{Examples}
+
+\subsection{Fibonacci}
+If you have created a Fibonacci program, you have most likely already used DP. This problem involves calculating the $n$th Fibonacci number. Remember that the Fibonacci sequence is defined as $F_1 = 1$, $F_2 = 1$, and $F_n = F_{n-1} + F_{n-2}$. Here is a naive solution:
+\begin{algorithm}[H]
+\caption{Fibonacci: Naive}
+\begin{algorithmic}
+    \Function{Fib}{$n$}
+        \If {$n = 0 \Or n = 1$}
+            \State \Return $n$
+        \EndIf
+        \State \Return $\Call{Fib}{n-1} + \Call{Fib}{n-2}$
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+Since each level of recursion calls itself twice, this results in exponential time complexity. However, notice that certain computations are repeated multiple times. Therefore, we can improve this to linear time at the expense of space by caching computations. This use of caching is called the \textit{top-down} approach, also known as \textit{memoization}, because we start from the overall problem and recursively break it down into subproblems until we reach the base case(s).
+\begin{algorithm}[H]
+\caption{Fibonacci: Top-Down}
+\begin{algorithmic}
+    \State \Init $memo[0 \dots N] \gets -1$
+    \Function{Fib}{$n$}
+        \If {$n = 0 \Or n = 1$}
+            \State \Return $n$
+        \EndIf
+        \If {$memo[n] > -1$}
+            \State \Return $memo[n]$
+        \EndIf
+        \State $memo[n] \gets \Call{Fib}{n-1} + \Call{Fib}{n-2}$
+        \State \Return $memo[n]$
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+Another approach is the \textit{bottom-up} approach, which involves starting from the smallest subproblems and then gradually combining them into larger subproblems until we reach the solution to the desired problem.
+\begin{algorithm}[H]
+\caption{Fibonacci: Bottom-Up}
+\begin{algorithmic}
+    \Function{Fib}{$N$}
+        \State \Init $dp[0 \dots N]$
+        \State $dp[0] \gets 0$
+        \State $dp[1] \gets 1$
+        \For {$i \gets 2 \dots N$}
+            \State $dp[i] \gets dp[i - 1] + dp[i - 2]$
+        \EndFor
+        \State \Return $dp[N]$
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+Both of these DP solutions run in linear time and linear space, which is far better than the naive solution's exponential time complexity. In general, DP reduces the time complexity of problems from exponential to polynomial. %describe sliding window trick
+
+\subsection{Unbounded Knapsack Problem}
+Now let's try a slightly harder problem. The knapsack problem is the canonical DP problem and is often present in introductory algorithms contests. Given $N$ types of objects, with the $i$th type having value \texttt{V[i]} and weight \texttt{W[i]}, which objects do we select to maximize the value without exceeding the knapsack's weight capacity $C$? Note that we can take multiple copies of the same type of object, hence the name ``unbounded."
+
+The most difficult part of this problem, as with most DP problems, is determining how to divide the problem into overlapping subproblems. Let's define \texttt{memo[c]} as the solution to the subproblem with capacity $c$. Note that adding an object to the knapsack is analogous to reducing the capacity of the knapsack. At each step, we want to add an object such that the sum of the value of the object and the value of the smaller capacity knapsack is maximized. Thus, the knapsack problem exhibits \textit{optimal substructures}, which is one of the characteristics of a DP problem. Specifically, \texttt{memo[c] = max(memo[c], memo[c-W[i]] + V[i])}, looping $i$ from 1 to $N$ and with \texttt{memo[0] = 0}.
+\begin{algorithm}[H]
+\caption{Unbounded Knapsack}
+\begin{algorithmic}
+    \State $\Init memo[0 \dots N] \gets -1$
+    \State $memo[0] \gets 0$
+    \Function{Knapsack}{$c$}
+        \If {$memo[c] > -1$} \Comment Already computed this subproblem
+            \State \Return $memo[c]$
+        \EndIf
+        \For {$i \gets 1 \dots N$}
+            \If {$c - W[i] > 0$} \Comment Check if the object can fit
+                \State $memo[c] \gets \Call{max}{memo[c], \Call{Knapsack}{c - W[i]} + V[i]}$
+            \EndIf
+        \EndFor
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{0-1 Knapsack Problem}
+There are several variations of the knapsack problem. In the 0-1 knapsack problem, we can either take 1 copy of an item or not take it at all. Let's define \texttt{memo[i][c]} as the solution to the subproblem considering only the available objects up to the $i$th object and with a knapsack of capacity $c$.
+\begin{algorithm}[H]
+\caption{0-1 Knapsack}
+\begin{algorithmic}
+    \State $\Init memo[0 \dots N][0 \dots C] \gets -1$
+    \State $memo[0] \gets 0$
+    \Function{Knapsack}{$i$, $c$}
+        \If {$i = N \Or c = 0$} \Comment No more objects or bag is full
+            \State \Return 0
+        \EndIf
+        \If {$memo[i][c] > -1$} \Comment Already computed this subproblem
+            \State \Return $memo[i][c]$
+        \EndIf
+        \If {$W[i] > c$} \Comment Cannot fit this object
+            \State $memo[i][c] \gets \Call{Knapsack}{i+1, c}$ \Comment Skip this object
+        \Else
+            \State $memo[i][c] \gets \Call{max}{\Call{Knapsack}{i+1, c}, V[i] + \Call{Knapsack}{i+1, c - W[i]}}$
+        \EndIf
+        \State \Return $memo[i][c]$
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+
+\section{Top-Down vs. Bottom-Up}
+As we saw with Fibonacci, there are generally two approaches to implementing DP. Both approaches use tables, but the bottom-up DP table is filled differently from the top-down DP memo table. In the top-down approach, the memo table is only filled as needed through recursion. In the bottom-up approach, the table is filled iteratively in an order such that the previous values needed to compute the current value have already been computed. Although both approaches will have the same time complexity and in general which approach you use is a matter of preference, it is worth noting the advantages and disadvantages of each, which may become important at higher level competitions.
+
+As mentioned before, the top-down approach only computes the necessary subproblems. However, there is overhead due to recursion. Therefore, the bottom-up approach is faster if many subproblems are revisited, because there is no overhead due to recursion. However, the bottom-up approach may compute some unnecessary subproblems. Another advantage of the bottom-up approach is that it has opportunities for optimization that the top-down approach does not, such as the sliding window trick.
+% bottom-up better for Fibonacci, top-down better for knapsack
+
+
+\section{General Strategy\protect\footnote{This section borrows heavily from Ryan Jian's lecture.}}
+\begin{enumerate}
+    \item \textbf{Identify state variables.} These are the variables that define subproblems, i.e., they are the arguments to the recursive function. In general, the more state variables there are, the slower the algorithm. For example, if we have state \texttt{dp[i][j][k]} where $i$ ranges from 0 to $A$, $j$ from 0 to $B$, and $k$ from 0 to $C$, then the bottom-up approach must take at least $O(ABC)$ time.
+    \item \textbf{Determine base case(s).} Because DP solves recursive problems, there has to be a base case.
+    \item \textbf{Determine the recurrence relation.} This is the relationship between the overall problem and the subproblems (remember, DP problems must exhibit optimal substructures). Also, these subproblems must overlap.
+\end{enumerate}
+
+
+\section{Problems}
+The best way to get better at DP is to practice!
+\begin{enumerate}
+    \item \textbf{Max Range Sum.} Given an integer array, determine its maximum range sum, i.e., the maximum range sum query.
+    \item \textbf{Longest Increasing Subsequence.} Given a sequence of numbers, determine its longest increasing subsequence. Note that the subsequence is not necessarily contiguous.
+    \item \textbf{Coin Change.} Given $n$ types of coin denominations with values \texttt{V[0]}, \texttt{V[1]}, \dots, \texttt{V[n-1]}, determine the minimum number of coins needed to make change for an amount of money $C$. Assume \texttt{V[0] = 1} so that you will always be able to make change for any amount $C$.
+\end{enumerate}
+
+
+\end{document}

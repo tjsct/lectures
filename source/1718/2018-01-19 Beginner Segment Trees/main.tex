@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=.9in]{geometry}
+
+\usepackage{qtree}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\algnewcommand\Or{\textbf{ or }}
+\algnewcommand\And{\textbf{ and }}
+
+\title{Beginner Segment Trees}
+\author{Presented by: Srinidhi Krishnamurthy \\ Lecture Written by: Charles Zhao}
+
+\date{January 19, 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+A \textit{segment tree} is a data structure for storing intervals, or \textit{segments}. Segment trees can efficiently answer dynamic range queries. We will use a segment tree to solve the Range Minimum Query (RMQ) problem, which is the problem of finding the minimum element in an array within a given range $i$ to $j$. Other range queries include the maximum within a range or the sum of a range. A naive solution to RMQ is to iterate from index $i$ to $j$, which takes $O(n)$ per query. This is too slow if $n$ is large or if there are many queries. Another solution is to build a 2D matrix containing every single RMQ, which would be able to answer queries in $O(1)$ time. However, it would take $O(n^2)$ time to build this matrix and $O(n^2)$ space to store the matrix. Therefore, neither of these solutions scales well. Segment trees solve the problems of both time and space.
+
+\section{Constructing the Tree}
+
+A segment tree is a balanced binary tree in which each leaf represents an element in the array. The root of the tree represents segment $[0, n-1]$, and for each segment$[l, r]$ represented by the node at index $p$, the left child represents the segment $[l, (l + r) / 2]$ and the right child represents the segment $[(l + r) / 2 + 1, r]$. In the case of RMQ, "represents" means the value of the node is the minimum of the segment it represents. For example, for the array $[-1, 3, 4, 0, 2, 1]$, the tree would look as follows:
+
+\Tree [.-1 [.-1 [.-1 -1 3 ] 4 ] [.0 [.0 0 2 ] 1 ]]
+
+\medskip
+Constructing this tree takes $O(n)$ time and $O(n)$ space. In the pseudocode below, we build the tree recursively. The tree is represented as an array $st$ where index 1 is the root of the tree and the left and right children of index $p$ are indices $2 \times p$ and $(2 \times p) + 1$, respectively. $l$ and $r$ are the left and right bounds of the current segment, respectively.
+
+\begin{algorithm}[H]
+\caption{Segment Tree Construction}
+\begin{algorithmic}
+    \Function{Build}{$p$, $l$, $r$}
+        \If {$l = r$}
+            \State $st[p] \gets A[l]$
+        \Else
+            \State $pl \gets 2 \times p$
+            \State $pr \gets 2 \times p + 1$
+            \State $\Call{Build}{pl, l, (l + r) / 2}$
+            \State $\Call{Build}{pr, (l + r) / 2, r}$
+            \State \Return $\Call{min}{st[pl], st[pr]}$
+        \EndIf
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\section{Solving Queries}
+
+There are three cases that we must consider when traversing a segment tree: when part of the segment represented by the node is within the query; when the segment is completely within the query; and when the segment is completely outside of the query. If part of the segment is within the query, we must check both of the node's children. If the segment is completely within the query, we return the node's value, which is the minimum of the segment it represents. If the segment is completely outside of the query, we return some very large number. In the pseudocode below, we traverse the tree recursively. With the segment tree built, solving an RMQ takes $O(\log n)$ time. This is because segment trees allow us to avoid traversing unrelated parts of the tree. In the worst case, in which only part of every segment we reach is within the query, we traverse two root-to-leaf paths, taking $O(2 \times \log n) = O(\log n)$ time.
+
+\begin{algorithm}[H]
+\caption{Range Minimum Query Using a Segment Tree}
+\begin{algorithmic}
+    \Function{RMQ}{$p$, $l$, $r$, $i$, $j$}
+        \If {$i > r \Or j < l$}
+            \State \Return $\infty$
+        \EndIf
+        \If {$l >= i \And r <= j$}
+            \State \Return $st[p]$
+        \EndIf
+        \State $pl \gets 2 \times p$
+        \State $pr \gets 2 \times p + 1$
+        \State $minl \gets \Call{RMQ}{pl, l, (l + r) / 2, i, j}$
+        \State $minr \gets \Call{RMQ}{pr, (l + r) / 2 + 1, r, i, j}$
+        \State \Return $\Call{min}{minl, minr}$
+    \EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\section{Modifying the Tree}
+
+Remember that we said segment trees can efficiently answer \textit{dynamic} range queries. This means that if the array on which we are performing RMQs changes, we can efficiently update the segment tree. If an element in the array changes, we start from the leaf node representing that element and move up the tree, updating nodes as we go. Thus, this takes $O(\log n)$ time.
+
+\end{document}

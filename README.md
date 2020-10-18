@@ -3,9 +3,10 @@
 Contains every lecture on the [SCT website](https://activities.tjhsst.edu/sct/).
 Submit a pull request if you want to put a lecture here.
 
+LaTeX source is missing for every year before 2015.
+
 #### Broken Lectures
 TODO: Email the authors.
-- 
 - 05/13/2016: [Nondeterministic Algorithms](https://activities.tjhsst.edu/sct/lectures/1516/SCT_Nondeterministic_Algorithms.pdf), Jerry Huang, Justin Zhang
 - 05/13/2016: [Fast Multiplication: Karatsuba and FFT](https://activities.tjhsst.edu/sct/lectures/1516/SCT_Polynomial.pdf), Haoyuan Sun
 - 12/11/2015: [√n Bucketing and Segment Tree](https://activities.tjhsst.edu/sct/lectures/1516/SCT_Segment_Tree.pdf), Samuel Hsiang
