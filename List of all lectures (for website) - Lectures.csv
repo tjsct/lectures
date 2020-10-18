@@ -1,95 +1,95 @@
-year,date,title,author,level,google_drive_id,link
-2003-04,2003-10-17,Dynamic Programming 2,,,0B84cCW3wbL7fTXVJYzdsWUxzWFk,https://activities.tjhsst.edu/sct/lectures/0304/dp2.pdf
-2003-04,2003-10-31,The Greedy Algorithm,,,0B84cCW3wbL7fZ1VpVW5KTjc1MEU,https://activities.tjhsst.edu/sct/lectures/0304/greedy.pdf
-2003-04,2004-01-16,Network Flow,,,0B84cCW3wbL7fQ3cxTk41WEdCSU0,https://activities.tjhsst.edu/sct/lectures/0304/netflow.pdf
-2003-04,2004-01-30,Practice Problems,,,0B84cCW3wbL7fZlFINkw1UzBXMnM,https://activities.tjhsst.edu/sct/lectures/0304/problems.pdf
-2003-04,2004-03-12,More Practice Problems,,,0B84cCW3wbL7fQ1NIcG5jcDZHUm8,https://activities.tjhsst.edu/sct/lectures/0304/problems2.pdf
-2003-04,2004-03-29,DP Problems,,,0B84cCW3wbL7fQW5JVW1iYUhJZmc,https://activities.tjhsst.edu/sct/lectures/0304/problems3.pdf
+year,date,title,author,level,google_drive_id,filename
+2003-04,2003-10-17,Dynamic Programming 2,,,0B84cCW3wbL7fTXVJYzdsWUxzWFk,dp2.pdf
+2003-04,2003-10-31,The Greedy Algorithm,,,0B84cCW3wbL7fZ1VpVW5KTjc1MEU,greedy.pdf
+2003-04,2004-01-16,Network Flow,,,0B84cCW3wbL7fQ3cxTk41WEdCSU0,netflow.pdf
+2003-04,2004-01-30,Practice Problems,,,0B84cCW3wbL7fZlFINkw1UzBXMnM,problems.pdf
+2003-04,2004-03-12,More Practice Problems,,,0B84cCW3wbL7fQ1NIcG5jcDZHUm8,problems2.pdf
+2003-04,2004-03-29,DP Problems,,,0B84cCW3wbL7fQW5JVW1iYUhJZmc,problems3.pdf
 ,,,,,,
-2004-05,2004-10-29,Dynamic Programming,,,0B84cCW3wbL7fSWhpQjFOMWhQUHc,https://activities.tjhsst.edu/sct/lectures/0405/dp1.pdf
-2004-05,2004-11-19,Graph Theory II,,,0B84cCW3wbL7fLXpWdEZnT0RxekU,https://activities.tjhsst.edu/sct/lectures/0405/graph2.pdf
+2004-05,2004-10-29,Dynamic Programming,,,0B84cCW3wbL7fSWhpQjFOMWhQUHc,dp1.pdf
+2004-05,2004-11-19,Graph Theory II,,,0B84cCW3wbL7fLXpWdEZnT0RxekU,graph2.pdf
 ,,,,,,
-2006-07,,Name that Algorithm Powerpoint,,,0B84cCW3wbL7fa05qRkFWczB4RWc,https://activities.tjhsst.edu/sct/lectures/0607/SCT.odp
-2006-07,2006-09-22,Contest 1,,,0B84cCW3wbL7feWIzRzZMXzJrVkk,https://activities.tjhsst.edu/sct/lectures/0607/contest1.pdf
-2006-07,2006-09-22,Solutions,,,0B84cCW3wbL7fLTZ2SVd6QlMyWWs,https://activities.tjhsst.edu/sct/lectures/0607/contest1sol.pdf
-2006-07,2006-10-06,The Greedy Algorithm,"Tom Morgan, Jacob Steinhardt",,0B84cCW3wbL7fS0o5SjZnZElRaWM,https://activities.tjhsst.edu/sct/lectures/0607/greedy0607.pdf
-2006-07,2006-10-12,Graph Theory Pt 1,Jeff Chen,,0B84cCW3wbL7fOFctcF9CY0lxOVE,https://activities.tjhsst.edu/sct/lectures/0607/graph1.pdf
-2006-07,2006-11-02,Graph Theory Pt 2,Jacob Steinhardt,,0B84cCW3wbL7fVHVteFpaMlpMU1U,https://activities.tjhsst.edu/sct/lectures/0607/newgraph2.pdf
-2006-07,2006-12-01,Computational Geometry,Jonathan Wang,,0B84cCW3wbL7fMVdkVy1RT3hmamM,https://activities.tjhsst.edu/sct/lectures/0607/compgeo.pdf
-2006-07,2006-12-08,Network Flow,Tom Morgan,,0B84cCW3wbL7fUEwzRWRtQTdmaGM,https://activities.tjhsst.edu/sct/lectures/0607/netflownew.pdf
-2006-07,2007-04-13,Advanced Computational Geometry Pt.1,"Jacob Steinhardt, Tom Morgan, Jeff Chen",,0B84cCW3wbL7fLUdkUHZBS0QzN1k,https://activities.tjhsst.edu/sct/lectures/0607/CompGeom.pdf
+2006-07,,Name that Algorithm Powerpoint,,,0B84cCW3wbL7fa05qRkFWczB4RWc,SCT.odp
+2006-07,2006-09-22,Contest 1,,,0B84cCW3wbL7feWIzRzZMXzJrVkk,contest1.pdf
+2006-07,2006-09-22,Solutions,,,0B84cCW3wbL7fLTZ2SVd6QlMyWWs,contest1sol.pdf
+2006-07,2006-10-06,The Greedy Algorithm,"Tom Morgan, Jacob Steinhardt",,0B84cCW3wbL7fS0o5SjZnZElRaWM,greedy0607.pdf
+2006-07,2006-10-12,Graph Theory Pt 1,Jeff Chen,,0B84cCW3wbL7fOFctcF9CY0lxOVE,graph1.pdf
+2006-07,2006-11-02,Graph Theory Pt 2,Jacob Steinhardt,,0B84cCW3wbL7fVHVteFpaMlpMU1U,newgraph2.pdf
+2006-07,2006-12-01,Computational Geometry,Jonathan Wang,,0B84cCW3wbL7fMVdkVy1RT3hmamM,compgeo.pdf
+2006-07,2006-12-08,Network Flow,Tom Morgan,,0B84cCW3wbL7fUEwzRWRtQTdmaGM,netflownew.pdf
+2006-07,2007-04-13,Advanced Computational Geometry Pt.1,"Jacob Steinhardt, Tom Morgan, Jeff Chen",,0B84cCW3wbL7fLUdkUHZBS0QzN1k,CompGeom.pdf
 ,,,,,,
-2007-08,,Advanced Ad Hoc,Jacob Steinhardt,,0B84cCW3wbL7fdmdZNXpGUVROQUU,https://activities.tjhsst.edu/sct/lectures/0708/adhocadvanced.pdf
-2007-08,,Advanced Dynamic Programming,Jacob Steinhardt,,0B84cCW3wbL7fQXdfNzZMdWJadnc,https://activities.tjhsst.edu/sct/lectures/0708/dpadvanced.pdf
-2007-08,2007-10-06,Intro Dynamic Programming,Jeff Chen,,0B84cCW3wbL7fSktBdFBwVDN4dlk,https://activities.tjhsst.edu/sct/lectures/0708/dpintro.pdf
-2007-08,2007-10-12,Graph Theory Condensed,Jeff Chen,,0B84cCW3wbL7fVGlsMG5YcWtLVkk,https://activities.tjhsst.edu/sct/lectures/0708/graphcondensed.pdf
+2007-08,,Advanced Ad Hoc,Jacob Steinhardt,,0B84cCW3wbL7fdmdZNXpGUVROQUU,adhocadvanced.pdf
+2007-08,,Advanced Dynamic Programming,Jacob Steinhardt,,0B84cCW3wbL7fQXdfNzZMdWJadnc,dpadvanced.pdf
+2007-08,2007-10-06,Intro Dynamic Programming,Jeff Chen,,0B84cCW3wbL7fSktBdFBwVDN4dlk,dpintro.pdf
+2007-08,2007-10-12,Graph Theory Condensed,Jeff Chen,,0B84cCW3wbL7fVGlsMG5YcWtLVkk,graphcondensed.pdf
 ,,,,,,
-2009-10,2009-10-09,Dynamic Programming,Andre Kessler,Silver,0B84cCW3wbL7fd05LMDcyNVhsUUU,https://activities.tjhsst.edu/sct/lectures/0910/DP.pdf
-2009-10,2009-10-23,Contest Strategy,Andre Kessler,,0B84cCW3wbL7fU0ZEYjNRNVdQMGM,https://activities.tjhsst.edu/sct/lectures/0910/contest_strategy.pdf
-2009-10,2009-12-04,Computational Geometry,Andre Kessler,,0B84cCW3wbL7fZkw2SFZPbC1qRWM,https://activities.tjhsst.edu/sct/lectures/0910/comp_geo.pdf
-2009-10,2009-12-18,Convex Hull,Andre Kessler,,0B84cCW3wbL7fZlllc0JoZ0FaWWc,https://activities.tjhsst.edu/sct/lectures/0910/convex_hull.pdf
-2009-10,2010-01-30,Network Flow,Andre Kessler,,0B84cCW3wbL7faWpBTXdGTklnUjg,https://activities.tjhsst.edu/sct/lectures/0910/network_flow.pdf
+2009-10,2009-10-09,Dynamic Programming,Andre Kessler,Silver,0B84cCW3wbL7fd05LMDcyNVhsUUU,DP.pdf
+2009-10,2009-10-23,Contest Strategy,Andre Kessler,,0B84cCW3wbL7fU0ZEYjNRNVdQMGM,contest_strategy.pdf
+2009-10,2009-12-04,Computational Geometry,Andre Kessler,,0B84cCW3wbL7fZkw2SFZPbC1qRWM,comp_geo.pdf
+2009-10,2009-12-18,Convex Hull,Andre Kessler,,0B84cCW3wbL7fZlllc0JoZ0FaWWc,convex_hull.pdf
+2009-10,2010-01-30,Network Flow,Andre Kessler,,0B84cCW3wbL7faWpBTXdGTklnUjg,network_flow.pdf
 ,,,,,,
-2010-11,2010-09-23,Introduction to Senior Computer Team 10-11,"Andre Kessler, Saketh Are, Andrew Cheong",,0B84cCW3wbL7faTlPSFB6MEVDLVU,https://activities.tjhsst.edu/sct/lectures/1011/sct-intro.pdf
-2010-11,2010-10-01,Dynamic Programming for Contests,"Saketh Are, Andre Kessler",,0B84cCW3wbL7fS3hBZ21sOG5rNjQ,https://activities.tjhsst.edu/sct/lectures/1011/dpgold.pdf
-2010-11,,Contest Strategy,Andre Kessler,,0B84cCW3wbL7fUFprZ0dvTEZ6cWM,https://activities.tjhsst.edu/sct/lectures/1011/contest-strategy.pdf
-2010-11,2010-11-18,Greedy Algorithms,Daniel D. Kang,,0B84cCW3wbL7fbVREMzBBMjM2M2s,https://activities.tjhsst.edu/sct/lectures/1011/greedy-2010.pdf
-2010-11,2010-12-03,Shortest Path Algorithms,Saketh Are,,0B84cCW3wbL7fbnp2VWRWYjJ0bUk,https://activities.tjhsst.edu/sct/lectures/1011/shortest_path_algos.pdf
-2010-11,2010-12-03,Advanced Graph Theory Topics,Andre Kessler,,0B84cCW3wbL7fQVZ6a1RGWG81YW8,https://activities.tjhsst.edu/sct/lectures/1011/adv-graph-theory.pdf
-2010-11,2010-12-10,Binary Search,Andre Kessler,,0B84cCW3wbL7fdkh6UzNuQXo1TU0,https://activities.tjhsst.edu/sct/lectures/1011/bsearch.pdf
-2010-11,2011-04-08,Disjoint Set Data Structures,Saketh Are,,0B84cCW3wbL7fRWV3WjZhMXI1ZlE,https://activities.tjhsst.edu/sct/lectures/1011/union-find.pdf
+2010-11,2010-09-23,Introduction to Senior Computer Team 10-11,"Andre Kessler, Saketh Are, Andrew Cheong",,0B84cCW3wbL7faTlPSFB6MEVDLVU,sct-intro.pdf
+2010-11,2010-10-01,Dynamic Programming for Contests,"Saketh Are, Andre Kessler",,0B84cCW3wbL7fS3hBZ21sOG5rNjQ,dpgold.pdf
+2010-11,,Contest Strategy,Andre Kessler,,0B84cCW3wbL7fUFprZ0dvTEZ6cWM,contest-strategy.pdf
+2010-11,2010-11-18,Greedy Algorithms,Daniel D. Kang,,0B84cCW3wbL7fbVREMzBBMjM2M2s,greedy-2010.pdf
+2010-11,2010-12-03,Shortest Path Algorithms,Saketh Are,,0B84cCW3wbL7fbnp2VWRWYjJ0bUk,shortest_path_algos.pdf
+2010-11,2010-12-03,Advanced Graph Theory Topics,Andre Kessler,,0B84cCW3wbL7fQVZ6a1RGWG81YW8,adv-graph-theory.pdf
+2010-11,2010-12-10,Binary Search,Andre Kessler,,0B84cCW3wbL7fdkh6UzNuQXo1TU0,bsearch.pdf
+2010-11,2011-04-08,Disjoint Set Data Structures,Saketh Are,,0B84cCW3wbL7fRWV3WjZhMXI1ZlE,union-find.pdf
 ,,,,,,
-2011-12,2011-09-30,Introduction to Senior Computer Team 11-12,SCT Officers,,0B84cCW3wbL7fQUpXVlczVU0yZkIxMVJNUVcxTk1EMjMxOENz,https://activities.tjhsst.edu/sct/lectures/1112/intro093011.pdf
-2011-12,2011-10-07,Basic Graph Theory,Albert Gural,,0B84cCW3wbL7fdk1UVmxMUHhaM2c,https://activities.tjhsst.edu/sct/lectures/1112/bfsdfs100711.pdf
-2011-12,2011-10-07,Intermediate Graph Theory,Alex Chen,,0B84cCW3wbL7fUG5EVW9FNzJfbGM,https://activities.tjhsst.edu/sct/lectures/1112/graphtheory100711.pdf
-2011-12,2011-10-07,Advanced Graph Theory,Saketh Are,,0B84cCW3wbL7fQjgtRUM0bkJzdDQ,https://activities.tjhsst.edu/sct/lectures/1112/advgraphtheory100711.pdf
-2011-12,2011-10-14,Contest Coding Tips,Alex Chen,,0B84cCW3wbL7fbmJ0bGR5Wk96T1E,https://activities.tjhsst.edu/sct/lectures/1112/codingprac101411.pdf
-2011-12,2011-10-14,Introduction to Dynamic Programming,Albert Gural,,0B84cCW3wbL7fdUJVUXlKV1RXMlE,https://activities.tjhsst.edu/sct/lectures/1112/dp101411.pdf
-2011-12,2011-10-21,Complexity Theory,"Albert Gural, Saketh Are",,0B84cCW3wbL7fRmJyUC12SF9zLTg,https://activities.tjhsst.edu/sct/lectures/1112/complexity102111.pdf
-2011-12,2011-10-21,Binary Search Applications,Alex Chen,,0B84cCW3wbL7fWEdFaldwRjJBQzA,https://activities.tjhsst.edu/sct/lectures/1112/binary102111.pdf
-2011-12,2011-10-28,Basic Data Structures,Albert Gural,,0B84cCW3wbL7faDIzaHFRcjZ2ckU,https://activities.tjhsst.edu/sct/lectures/1112/basic-data-struct.pdf
-2011-12,2011-10-28,The Range Query Problem,Alex Chen,,0B84cCW3wbL7feENsT05DRnlKMVk,https://activities.tjhsst.edu/sct/lectures/1112/rquery102811.pdf
-2011-12,,Greedy Algorithms,Videh Seksaria,Bronze,0B84cCW3wbL7fa3hTcE8tSGpoZWc,https://activities.tjhsst.edu/sct/lectures/1112/USACOgreedy.pdf
-2011-12,2011-11-18,String Manipulation Tricks,Alex Chen,,0B84cCW3wbL7fakYwUEJGV191Y28,https://activities.tjhsst.edu/sct/lectures/1112/strings111811.pdf
-2011-12,,Useful Algorithms and Programming Techniques,Billy Moses,,0B84cCW3wbL7fQ3pIcFRndDN6UW8,https://activities.tjhsst.edu/sct/lectures/1112/UsefulAlgorithmsAndProgrammingTechniques-2.pdf
-2011-12,2011-12-02,DP Techniques,Alex Chen,,0B84cCW3wbL7fN09CWDRZdzhkbUk,https://activities.tjhsst.edu/sct/lectures/1112/moredp.pdf
-2011-12,2012-01-27,Ad Hoc and Bronze Practice,Alex Chen,,0B84cCW3wbL7fSGo2ZG1HcDI0VjA,https://activities.tjhsst.edu/sct/lectures/1112/adhoc.pdf
-2011-12,2012-01-27,Shortest Paths,Albert Gural,,0B84cCW3wbL7fWHJack5HUXM1dWc,https://activities.tjhsst.edu/sct/lectures/1112/shortest-paths.pdf
-2011-12,2012-02-03,Bronze Challenge Problem,Alex Chen,,0B84cCW3wbL7fNjkxZE9WV3FhRGs,https://activities.tjhsst.edu/sct/lectures/1112/b_practice.pdf
-2011-12,2012-02-10,Graph Theory Practice,Videh Seksaria,,0B84cCW3wbL7fbERKS3p3U3BqZXM,https://activities.tjhsst.edu/sct/lectures/1112/GraphProblems.pdf
-2011-12,2012-02-17,Introduction to Computational Geometry,"Saketh Are, Albert Gural",,0B84cCW3wbL7feFUwRThBQUF1MjA,https://activities.tjhsst.edu/sct/lectures/1112/compgeo2.pdf
-2011-12,2012-02-17,Intermediate Computational Geometry,Alex Chen,,0B84cCW3wbL7fSk13bzc1a2Y4ekk,https://activities.tjhsst.edu/sct/lectures/1112/compgeo.pdf
-2011-12,2012-03-02,Dynamic Programming Practice,Albert Gural,,0B84cCW3wbL7fLXJKdmVZTE5HalE,https://activities.tjhsst.edu/sct/lectures/1112/dpalbert.pdf
-2011-12,2012-03-02,Introduction to Network Flow,Alex Chen,,0B84cCW3wbL7fV1NmbFF5SXY1TEU,https://activities.tjhsst.edu/sct/lectures/1112/networkflow.pdf
-2011-12,2012-03-04,Intermediate Data Structures,Saketh Are,Silver,0B84cCW3wbL7fVUtTVDVHUmNvUTQ,https://activities.tjhsst.edu/sct/lectures/1112/silver-data-struct.pdf
-2011-12,2012-03-05,Binomial Heaps,Alex Chen,,0B84cCW3wbL7feWJUWUswY1JIUE0,https://activities.tjhsst.edu/sct/lectures/1112/binomheap.pdf
-2011-12,2012-04-20,String Algorithms,Nick Haliday,,0B84cCW3wbL7fcWo3Zzk1M0gtems,https://activities.tjhsst.edu/sct/lectures/1112/string.pdf
-2011-12,2012-04-24,Order and the Lack Thereof,Nick Haliday,,0B84cCW3wbL7fMk85cXFyMXFwYW8,https://activities.tjhsst.edu/sct/lectures/1112/order.pdf
+2011-12,2011-09-30,Introduction to Senior Computer Team 11-12,SCT Officers,,0B84cCW3wbL7fQUpXVlczVU0yZkIxMVJNUVcxTk1EMjMxOENz,intro093011.pdf
+2011-12,2011-10-07,Basic Graph Theory,Albert Gural,,0B84cCW3wbL7fdk1UVmxMUHhaM2c,bfsdfs100711.pdf
+2011-12,2011-10-07,Intermediate Graph Theory,Alex Chen,,0B84cCW3wbL7fUG5EVW9FNzJfbGM,graphtheory100711.pdf
+2011-12,2011-10-07,Advanced Graph Theory,Saketh Are,,0B84cCW3wbL7fQjgtRUM0bkJzdDQ,advgraphtheory100711.pdf
+2011-12,2011-10-14,Contest Coding Tips,Alex Chen,,0B84cCW3wbL7fbmJ0bGR5Wk96T1E,codingprac101411.pdf
+2011-12,2011-10-14,Introduction to Dynamic Programming,Albert Gural,,0B84cCW3wbL7fdUJVUXlKV1RXMlE,dp101411.pdf
+2011-12,2011-10-21,Complexity Theory,"Albert Gural, Saketh Are",,0B84cCW3wbL7fRmJyUC12SF9zLTg,complexity102111.pdf
+2011-12,2011-10-21,Binary Search Applications,Alex Chen,,0B84cCW3wbL7fWEdFaldwRjJBQzA,binary102111.pdf
+2011-12,2011-10-28,Basic Data Structures,Albert Gural,,0B84cCW3wbL7faDIzaHFRcjZ2ckU,basic-data-struct.pdf
+2011-12,2011-10-28,The Range Query Problem,Alex Chen,,0B84cCW3wbL7feENsT05DRnlKMVk,rquery102811.pdf
+2011-12,,Greedy Algorithms,Videh Seksaria,Bronze,0B84cCW3wbL7fa3hTcE8tSGpoZWc,USACOgreedy.pdf
+2011-12,2011-11-18,String Manipulation Tricks,Alex Chen,,0B84cCW3wbL7fakYwUEJGV191Y28,strings111811.pdf
+2011-12,,Useful Algorithms and Programming Techniques,Billy Moses,,0B84cCW3wbL7fQ3pIcFRndDN6UW8,UsefulAlgorithmsAndProgrammingTechniques-2.pdf
+2011-12,2011-12-02,DP Techniques,Alex Chen,,0B84cCW3wbL7fN09CWDRZdzhkbUk,moredp.pdf
+2011-12,2012-01-27,Ad Hoc and Bronze Practice,Alex Chen,,0B84cCW3wbL7fSGo2ZG1HcDI0VjA,adhoc.pdf
+2011-12,2012-01-27,Shortest Paths,Albert Gural,,0B84cCW3wbL7fWHJack5HUXM1dWc,shortest-paths.pdf
+2011-12,2012-02-03,Bronze Challenge Problem,Alex Chen,,0B84cCW3wbL7fNjkxZE9WV3FhRGs,b_practice.pdf
+2011-12,2012-02-10,Graph Theory Practice,Videh Seksaria,,0B84cCW3wbL7fbERKS3p3U3BqZXM,GraphProblems.pdf
+2011-12,2012-02-17,Introduction to Computational Geometry,"Saketh Are, Albert Gural",,0B84cCW3wbL7feFUwRThBQUF1MjA,compgeo2.pdf
+2011-12,2012-02-17,Intermediate Computational Geometry,Alex Chen,,0B84cCW3wbL7fSk13bzc1a2Y4ekk,compgeo.pdf
+2011-12,2012-03-02,Dynamic Programming Practice,Albert Gural,,0B84cCW3wbL7fLXJKdmVZTE5HalE,dpalbert.pdf
+2011-12,2012-03-02,Introduction to Network Flow,Alex Chen,,0B84cCW3wbL7fV1NmbFF5SXY1TEU,networkflow.pdf
+2011-12,2012-03-04,Intermediate Data Structures,Saketh Are,Silver,0B84cCW3wbL7fVUtTVDVHUmNvUTQ,silver-data-struct.pdf
+2011-12,2012-03-05,Binomial Heaps,Alex Chen,,0B84cCW3wbL7feWJUWUswY1JIUE0,binomheap.pdf
+2011-12,2012-04-20,String Algorithms,Nick Haliday,,0B84cCW3wbL7fcWo3Zzk1M0gtems,string.pdf
+2011-12,2012-04-24,Order and the Lack Thereof,Nick Haliday,,0B84cCW3wbL7fMk85cXFyMXFwYW8,order.pdf
 ,,,,,,
-2012-13,2012-09-21,Intro to Senior Computer Team,Nick Haliday,,0B84cCW3wbL7fVmFkd2ZZcWNZZlk,https://activities.tjhsst.edu/sct/lectures/1213/intro.pdf
-2012-13,2012-09-28,Computational Complexity,Owen Hoffman,,0B84cCW3wbL7fZXk5RjdWYXR5OUE,https://activities.tjhsst.edu/sct/lectures/1213/complexity_09_28_12.pdf
-2012-13,2012-09-28,Binary Indexed Trees,"Nick Haliday, Ryan Jian",,0B84cCW3wbL7fMXpQY09jQnBsQjQ,https://activities.tjhsst.edu/sct/lectures/1213/bit_09_28_12.pdf
-2012-13,2012-10-05,Sliding Window Maximum,Nick Haliday,,0B84cCW3wbL7fXzRZUmRjZEgxSVE,https://activities.tjhsst.edu/sct/lectures/1213/dphard.pdf
-2012-13,2012-10-02,Even More Dynamic Programming,Ryan Jian,,0B84cCW3wbL7fNGlYemh1VGpfZlk,https://activities.tjhsst.edu/sct/lectures/1213/sct___Dynamic_Programming_Practice_1.pdf
-2012-13,2012-10-12,DP Problem Set,Nick Haliday,,0B84cCW3wbL7fV0RlSTlmekh3RFk,https://activities.tjhsst.edu/sct/lectures/1213/DP_Problem_Set.pdf
-2012-13,2012-10-25,Greedy Algorithms,"Nick Haliday, Owen Hoffman",Bronze,0B84cCW3wbL7fbnRFSVh2ZkNtT2c,https://activities.tjhsst.edu/sct/lectures/1213/Greedy_Bronze_Lecture.pdf
-2012-13,,Cryptography,Yongkoo Kang,Guest lecture,0B84cCW3wbL7feG1KUlFhcmJoSmc,https://activities.tjhsst.edu/sct/lectures/1213/Cryptography_Guest.pdf
-2012-13,2013-05-09,Fast Fourier Transform,Sreenath Are,Guest lecture,0B84cCW3wbL7fSUFqUlpiVUV3dmc,https://activities.tjhsst.edu/sct/lectures/1213/fft.pdf
+2012-13,2012-09-21,Intro to Senior Computer Team,Nick Haliday,,0B84cCW3wbL7fVmFkd2ZZcWNZZlk,intro.pdf
+2012-13,2012-09-28,Computational Complexity,Owen Hoffman,,0B84cCW3wbL7fZXk5RjdWYXR5OUE,complexity_09_28_12.pdf
+2012-13,2012-09-28,Binary Indexed Trees,"Nick Haliday, Ryan Jian",,0B84cCW3wbL7fMXpQY09jQnBsQjQ,bit_09_28_12.pdf
+2012-13,2012-10-05,Sliding Window Maximum,Nick Haliday,,0B84cCW3wbL7fXzRZUmRjZEgxSVE,dphard.pdf
+2012-13,2012-10-02,Even More Dynamic Programming,Ryan Jian,,0B84cCW3wbL7fNGlYemh1VGpfZlk,sct___Dynamic_Programming_Practice_1.pdf
+2012-13,2012-10-12,DP Problem Set,Nick Haliday,,0B84cCW3wbL7fV0RlSTlmekh3RFk,DP_Problem_Set.pdf
+2012-13,2012-10-25,Greedy Algorithms,"Nick Haliday, Owen Hoffman",Bronze,0B84cCW3wbL7fbnRFSVh2ZkNtT2c,Greedy_Bronze_Lecture.pdf
+2012-13,,Cryptography,Yongkoo Kang,Guest lecture,0B84cCW3wbL7feG1KUlFhcmJoSmc,Cryptography_Guest.pdf
+2012-13,2013-05-09,Fast Fourier Transform,Sreenath Are,Guest lecture,0B84cCW3wbL7fSUFqUlpiVUV3dmc,fft.pdf
 ,,,,,,
-2013-14,2013-09-27,Introduction to Senior Computer Team,SCT Officers,,0B84cCW3wbL7fbnFtQm5ia2t6NEE,https://activities.tjhsst.edu/sct/lectures/1314/intro_to_sct_09_27_13.pdf
-2013-14,2013-10-04,Basic Complexity Theory,Yongkoo Kang,,0B84cCW3wbL7fWDlFN3JRbjhINms,https://activities.tjhsst.edu/sct/lectures/1314/complexity_theory_10_04_13.pdf
-2013-14,2013-10-04,Binary Indexed Trees (Part 1),"Ryan Jian, Sreenath Are",,0B84cCW3wbL7fWWRDSlhycjRRc00,https://activities.tjhsst.edu/sct/lectures/1314/binary_indexed_trees(part_1)_10_04_13.pdf
-2013-14,2013-10-11,Flood Fill,Yongkoo Kang,,0B84cCW3wbL7fclNTVUoxdnFHUms,https://activities.tjhsst.edu/sct/lectures/1314/flood_fill_10_11_13.pdf
-2013-14,2013-10-11,Binary Indexed Trees (Part 2),"Sreenath Are, Ryan Jian",,0B84cCW3wbL7faEZORXpLNjd5TnM,https://activities.tjhsst.edu/sct/lectures/1314/binary_indexed_trees(part_2)_29_10_11_13.pdf
-2013-14,2013-10-18,Binary Search,"Ryan Jian, Sreenath Are",,0B84cCW3wbL7fbmtXZnRKM1JjeWs,https://activities.tjhsst.edu/sct/lectures/1314/binary_search_10_18_13.pdf
-2013-14,2013-10-18,Graph Searching,Yongkoo Kang,,0B84cCW3wbL7fcGF3d0o5OGNESTg,https://activities.tjhsst.edu/sct/lectures/1314/graph_searching_10_18_13.pdf
-2013-14,2013-11-01,Dijkstra's Algorithm,"Ryan Jian, Yongkoo Kang",,0B84cCW3wbL7fUEtTNk9qTFdkenc,https://activities.tjhsst.edu/sct/lectures/1314/dijkstra_10_30_13.pdf
-2013-14,2013-11-01,String Matching,Sreenath Are,,0B84cCW3wbL7fc19FSDh3WXREM2s,https://activities.tjhsst.edu/sct/lectures/1314/string_matching_11_01_13.pdf
-2013-14,2013-11-08,Introduction to Dynamic Programming,Ryan Jian,,0B84cCW3wbL7fYnd5SzAwMkx2cUk,https://activities.tjhsst.edu/sct/lectures/1314/intro_dp_11_08_13.pdf
-2013-14,2013-11-15,Contest Strategy,Ryan Jian,,0B84cCW3wbL7fcldYSmVoWTZxNGs,https://activities.tjhsst.edu/sct/lectures/1314/contest_strategy_11_15_13.pdf
-2013-14,2013-11-15,Computational Geometry,"Yongkoo Kang, Ryan Jian",,0B84cCW3wbL7fcmFKZi1KTDFaY1U,https://activities.tjhsst.edu/sct/lectures/1314/intro_comp_geo_12_06_13.pdf
-2013-14,2013-12-06,Impartial Games,Sreenath Are,,0B84cCW3wbL7fX0pJM3FVNmg2OW8,https://activities.tjhsst.edu/sct/lectures/1314/impartial_games_12_06_13.pdf
-2013-14,2013-12-13,Union Find,Ryan Jian,,0B84cCW3wbL7fYkoyYThDUDMtYjA,https://activities.tjhsst.edu/sct/lectures/1314/union_find_12_13_13.pdf
+2013-14,2013-09-27,Introduction to Senior Computer Team,SCT Officers,,0B84cCW3wbL7fbnFtQm5ia2t6NEE,intro_to_sct_09_27_13.pdf
+2013-14,2013-10-04,Basic Complexity Theory,Yongkoo Kang,,0B84cCW3wbL7fWDlFN3JRbjhINms,complexity_theory_10_04_13.pdf
+2013-14,2013-10-04,Binary Indexed Trees (Part 1),"Ryan Jian, Sreenath Are",,0B84cCW3wbL7fWWRDSlhycjRRc00,binary_indexed_trees(part_1)_10_04_13.pdf
+2013-14,2013-10-11,Flood Fill,Yongkoo Kang,,0B84cCW3wbL7fclNTVUoxdnFHUms,flood_fill_10_11_13.pdf
+2013-14,2013-10-11,Binary Indexed Trees (Part 2),"Sreenath Are, Ryan Jian",,0B84cCW3wbL7faEZORXpLNjd5TnM,binary_indexed_trees(part_2)_29_10_11_13.pdf
+2013-14,2013-10-18,Binary Search,"Ryan Jian, Sreenath Are",,0B84cCW3wbL7fbmtXZnRKM1JjeWs,binary_search_10_18_13.pdf
+2013-14,2013-10-18,Graph Searching,Yongkoo Kang,,0B84cCW3wbL7fcGF3d0o5OGNESTg,graph_searching_10_18_13.pdf
+2013-14,2013-11-01,Dijkstra's Algorithm,"Ryan Jian, Yongkoo Kang",,0B84cCW3wbL7fUEtTNk9qTFdkenc,dijkstra_10_30_13.pdf
+2013-14,2013-11-01,String Matching,Sreenath Are,,0B84cCW3wbL7fc19FSDh3WXREM2s,string_matching_11_01_13.pdf
+2013-14,2013-11-08,Introduction to Dynamic Programming,Ryan Jian,,0B84cCW3wbL7fYnd5SzAwMkx2cUk,intro_dp_11_08_13.pdf
+2013-14,2013-11-15,Contest Strategy,Ryan Jian,,0B84cCW3wbL7fcldYSmVoWTZxNGs,contest_strategy_11_15_13.pdf
+2013-14,2013-11-15,Computational Geometry,"Yongkoo Kang, Ryan Jian",,0B84cCW3wbL7fcmFKZi1KTDFaY1U,intro_comp_geo_12_06_13.pdf
+2013-14,2013-12-06,Impartial Games,Sreenath Are,,0B84cCW3wbL7fX0pJM3FVNmg2OW8,impartial_games_12_06_13.pdf
+2013-14,2013-12-13,Union Find,Ryan Jian,,0B84cCW3wbL7fYkoyYThDUDMtYjA,union_find_12_13_13.pdf
 2013-14,,Topological Sorting,Allen Cheng,,,
 2013-14,,Starting and Finishing Times for Graph Traversal,Corwin de Boor,,,
 2013-14,,Minimum Spanning Trees,Hariank Muthakana,,,
@@ -98,139 +98,139 @@ year,date,title,author,level,google_drive_id,link
 2013-14,,Primes,Samuel Kim,,,
 2013-14,,Functional Programming,Zane Rossi,,,
 ,,,,,,
-2014-15,2014-10-03,String Matching,"Hariank Muthakana, Corwin de Boor",,0B84cCW3wbL7falFqblUtRU5sNXc,https://activities.tjhsst.edu/sct/lectures/1415/stringmatching_10_3_14.pdf
-2014-15,2014-10-10,Meet in the Middle,Matthew Savage,,0B84cCW3wbL7fZEFMc3U5T256WU0,https://activities.tjhsst.edu/sct/lectures/1415/meet_middle_10_10_14.pdf
-2014-15,2014-10-10,Complexity Theory,Hariank Muthakana,,0B84cCW3wbL7fZFlTWTRrZVRPOTQ,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Complexity_Theory.pdf
-2014-15,2014-10-03,Minimum Spanning Trees,Hariank Muthakana,,0B84cCW3wbL7fMjhUX1kxenBMODg,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Minimum_Spanning_Trees_2014.pdf
-2014-15,2015-01-16,Line Sweep,Hariank Muthakana,,0B84cCW3wbL7fTkY3N2RlVjlnRWc,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Line_Sweep.pdf
-2014-15,2015-02-13,Probabilistic Data Structures,Ethan Lowman,,0B84cCW3wbL7fd24xM1lMbFRFTjA,https://activities.tjhsst.edu/sct/lectures/1415/Probabilistic_Data_Structures.pdf
-2014-15,2015-03-27,Lowest Common Ancestor,Matthew Savage,,0B84cCW3wbL7fcVF5SFFrSkhMV1U,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Lowest_Common_Ancestor.pdf
-2014-15,2015-04-10,Convex Hull,Hariank Muthakana,,0B84cCW3wbL7fX2xDdUZmMzNyQXM,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Convex_Hull.pdf
-2014-15,2015-04-23,Dynamic Programming,Rajat Khanna,Guest lecture,0B84cCW3wbL7fckpKX2czT21IY2c,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Dynamic_Programming.pdf
-2014-15,2015-05-01,Math Programming,"Shwetark Patel, Jerry Huang",Guest lecture,0B84cCW3wbL7faW5oMHZZQTFnNHc,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Math_Programming.pdf
+2014-15,2014-10-03,String Matching,"Hariank Muthakana, Corwin de Boor",,0B84cCW3wbL7falFqblUtRU5sNXc,stringmatching_10_3_14.pdf
+2014-15,2014-10-10,Meet in the Middle,Matthew Savage,,0B84cCW3wbL7fZEFMc3U5T256WU0,meet_middle_10_10_14.pdf
+2014-15,2014-10-10,Complexity Theory,Hariank Muthakana,,0B84cCW3wbL7fZFlTWTRrZVRPOTQ,SCT_Complexity_Theory.pdf
+2014-15,2014-10-03,Minimum Spanning Trees,Hariank Muthakana,,0B84cCW3wbL7fMjhUX1kxenBMODg,SCT_Minimum_Spanning_Trees_2014.pdf
+2014-15,2015-01-16,Line Sweep,Hariank Muthakana,,0B84cCW3wbL7fTkY3N2RlVjlnRWc,SCT_Line_Sweep.pdf
+2014-15,2015-02-13,Probabilistic Data Structures,Ethan Lowman,,0B84cCW3wbL7fd24xM1lMbFRFTjA,Probabilistic_Data_Structures.pdf
+2014-15,2015-03-27,Lowest Common Ancestor,Matthew Savage,,0B84cCW3wbL7fcVF5SFFrSkhMV1U,SCT_Lowest_Common_Ancestor.pdf
+2014-15,2015-04-10,Convex Hull,Hariank Muthakana,,0B84cCW3wbL7fX2xDdUZmMzNyQXM,SCT_Convex_Hull.pdf
+2014-15,2015-04-23,Dynamic Programming,Rajat Khanna,Guest lecture,0B84cCW3wbL7fckpKX2czT21IY2c,SCT_Dynamic_Programming.pdf
+2014-15,2015-05-01,Math Programming,"Shwetark Patel, Jerry Huang",Guest lecture,0B84cCW3wbL7faW5oMHZZQTFnNHc,SCT_Math_Programming.pdf
 2014-15,2015-05-01,Lessons Learned from Battlecode 2015,"Eli Lifland, Nate Foss",Guest lecture,,
-2014-15,2015-05-07,Cryptography,Samuel Kim,Guest lecture,0B84cCW3wbL7fZFpveXA2blV2aTA,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Cryptography.pdf
-2014-15,2015-05-15,Game Theory,Allen Cheng,Guest lecture,0B84cCW3wbL7fbi1aZjliM0hENDg,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Game_Theory.pdf
-2014-15,2015-05-22,Heavy-Light Decomposition,Samuel Hsiang,Guest lecture,0B84cCW3wbL7falQ4ZW9RN21YSkk,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Heavy-Light_Decomposition.pdf
-2014-15,2015-05-22,Multiplying Polynomials,Haoyuan Sun,Guest lecture,0B84cCW3wbL7fMi1OQTN0U01vNjA,https://activities.tjhsst.edu/sct/lectures/1415/SCT_Multiplying_Polynomials.pdf
+2014-15,2015-05-07,Cryptography,Samuel Kim,Guest lecture,0B84cCW3wbL7fZFpveXA2blV2aTA,SCT_Cryptography.pdf
+2014-15,2015-05-15,Game Theory,Allen Cheng,Guest lecture,0B84cCW3wbL7fbi1aZjliM0hENDg,SCT_Game_Theory.pdf
+2014-15,2015-05-22,Heavy-Light Decomposition,Samuel Hsiang,Guest lecture,0B84cCW3wbL7falQ4ZW9RN21YSkk,SCT_Heavy-Light_Decomposition.pdf
+2014-15,2015-05-22,Multiplying Polynomials,Haoyuan Sun,Guest lecture,0B84cCW3wbL7fMi1OQTN0U01vNjA,SCT_Multiplying_Polynomials.pdf
 ,,,,,,
-2015-16,2015-09-25,Welcome to Senior Computer Team!,SCT Officers,,0B84cCW3wbL7fNGc2TDdMZ2N1aDg,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Orientation_1516.pdf
-2015-16,2015-10-02,Complexity Theory (Bronze),"Hariank Muthakana, Nate Foss",,,https://activities.tjhsst.edu/sct/lectures/1516/Complexity_Theory__Bronze_.pdf
-2015-16,2015-10-16,Sample I/O,SCT Officers,Beginner,0B84cCW3wbL7fTWRRTVBWdHFhc2M,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Sample_IO.pdf
-2015-16,2015-10-16,Graph Theory Review,Samuel Hsiang,Beginner,0B84cCW3wbL7fUnFWZVRnbHJVeEk,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Graph_Theory_Review.pdf
-2015-16,2015-10-16,Tarjan's Algorithm,Samuel Hsiang,Advanced,0B84cCW3wbL7fOThxQmhIZDlLRjA,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Tarjans_Algorithm.pdf
-2015-16,2015-11-13,Maximum Flow,Samuel Hsiang,,0B84cCW3wbL7fckgyaHRTczEteFU,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Maximum_Flow.pdf
-2015-16,2015-12-04,2^n Dynamic Programming and Masking,Samuel Hsiang,,0B84cCW3wbL7feGFWUVlLR2plc2c,https://activities.tjhsst.edu/sct/lectures/1516/SCT_2_n_Dynamic_Programming.pdf
-2015-16,2015-12-11,√n Bucketing and Segment Tree,Samuel Hsiang,,0B84cCW3wbL7fQl9zVUpZVHZzTDQ,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Segment_Tree.pdf
-2015-16,2016-02-12,Dynamic Programming,Jason Lam,,0B84cCW3wbL7fbzdLQno1MXdsdHc,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Dynamic_Programming.pdf
-2015-16,2016-03-11,Union-Find and Kruskal,Samuel Hsiang,,0B84cCW3wbL7fbVRFU2FWQnptOHM,https://activities.tjhsst.edu/sct/lectures/1516/SCT_DSU.pdf
-2015-16,2016-04-29,Aho-Corasick,Lawrence Wang,Guest lecture,0B84cCW3wbL7fYWN6WHlFZzhjZGs,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Aho_Corasick.pdf
+2015-16,2015-09-25,Welcome to Senior Computer Team!,SCT Officers,,0B84cCW3wbL7fNGc2TDdMZ2N1aDg,SCT_Orientation_1516.pdf
+2015-16,2015-10-02,Complexity Theory (Bronze),"Hariank Muthakana, Nate Foss",,,Complexity_Theory__Bronze_.pdf
+2015-16,2015-10-16,Sample I/O,SCT Officers,Beginner,0B84cCW3wbL7fTWRRTVBWdHFhc2M,SCT_Sample_IO.pdf
+2015-16,2015-10-16,Graph Theory Review,Samuel Hsiang,Beginner,0B84cCW3wbL7fUnFWZVRnbHJVeEk,SCT_Graph_Theory_Review.pdf
+2015-16,2015-10-16,Tarjan's Algorithm,Samuel Hsiang,Advanced,0B84cCW3wbL7fOThxQmhIZDlLRjA,SCT_Tarjans_Algorithm.pdf
+2015-16,2015-11-13,Maximum Flow,Samuel Hsiang,,0B84cCW3wbL7fckgyaHRTczEteFU,SCT_Maximum_Flow.pdf
+2015-16,2015-12-04,2^n Dynamic Programming and Masking,Samuel Hsiang,,0B84cCW3wbL7feGFWUVlLR2plc2c,SCT_2_n_Dynamic_Programming.pdf
+2015-16,2015-12-11,√n Bucketing and Segment Tree,Samuel Hsiang,,0B84cCW3wbL7fQl9zVUpZVHZzTDQ,SCT_Segment_Tree.pdf
+2015-16,2016-02-12,Dynamic Programming,Jason Lam,,0B84cCW3wbL7fbzdLQno1MXdsdHc,SCT_Dynamic_Programming.pdf
+2015-16,2016-03-11,Union-Find and Kruskal,Samuel Hsiang,,0B84cCW3wbL7fbVRFU2FWQnptOHM,SCT_DSU.pdf
+2015-16,2016-04-29,Aho-Corasick,Lawrence Wang,Guest lecture,0B84cCW3wbL7fYWN6WHlFZzhjZGs,SCT_Aho_Corasick.pdf
 2015-16,2016-05-05,Segment Tree (and its variants),"Wassim Omais, Shwetark Patel",Guest lecture,,
-2015-16,2016-05-05,Hashing,Kevin Geng,Guest lecture,0B84cCW3wbL7fa1BLenNyOHUtZkE,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Hashing.pdf
-2015-16,2016-05-13,Fast Multiplication: Karatsuba and FFT,Haoyuan Sun,Guest lecture,0B84cCW3wbL7fUVpVTTVLbDVPcG8,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Polynomial.pdf
-2015-16,2016-05-13,Nondeterministic Algorithms,"Jerry Huang, Justin Zhang",Guest lecture,0B84cCW3wbL7fUUZoYnlqam1lZ0E,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Nondeterministic_Algorithms.pdf
-2015-16,2016-05-17,Kevin and Trees,Franklyn Wang,Guest lecture,0B84cCW3wbL7fTG5oeXBuRFROeWM,https://activities.tjhsst.edu/sct/lectures/1516/SCT_Kevin_and_Trees.pdf
+2015-16,2016-05-05,Hashing,Kevin Geng,Guest lecture,0B84cCW3wbL7fa1BLenNyOHUtZkE,SCT_Hashing.pdf
+2015-16,2016-05-13,Fast Multiplication: Karatsuba and FFT,Haoyuan Sun,Guest lecture,0B84cCW3wbL7fUVpVTTVLbDVPcG8,SCT_Polynomial.pdf
+2015-16,2016-05-13,Nondeterministic Algorithms,"Jerry Huang, Justin Zhang",Guest lecture,0B84cCW3wbL7fUUZoYnlqam1lZ0E,SCT_Nondeterministic_Algorithms.pdf
+2015-16,2016-05-17,Kevin and Trees,Franklyn Wang,Guest lecture,0B84cCW3wbL7fTG5oeXBuRFROeWM,SCT_Kevin_and_Trees.pdf
 2015-16,2016-06-03,Cycle Finding,Charles Zhao,Guest lecture,,
 ,,,,,,
-2016-17,2016-09-23,Orientation Lecture,SCT Officers,,0B84cCW3wbL7fWGwxTVRrZ1FadjA,https://activities.tjhsst.edu/sct/lectures/1617/2016-09-23_Orientation.pdf
-2016-17,2016-09-30,Computational Complexity,Charles Zhao,Beginner,0B84cCW3wbL7fb2lEZXQzc3RTQ2c,https://activities.tjhsst.edu/sct/lectures/1617/2016-09-30_Computational_Complexity.pdf
-2016-17,2016-09-30,Union-Find,Kevin Geng,Advanced,0B84cCW3wbL7fdnFFNF9ESk5CTTA,https://activities.tjhsst.edu/sct/lectures/1617/2016-09-30_Union_Find.pdf
-2016-17,2016-10-03,Elementary Algorithms,Kevin Geng,Beginner,0B84cCW3wbL7fd1N6RWQxRjEtNmM,https://activities.tjhsst.edu/sct/lectures/1617/2016-10-03_Elementary_Algorithms.pdf
-2016-17,2016-10-03,Minimum Spanning Trees,"Larry Wang, Charles Zhao",Advanced,0B84cCW3wbL7fT0s2N3dfU3VVTk0,https://activities.tjhsst.edu/sct/lectures/1617/2016-10-03_MST.pdf
-2016-17,2016-10-21,Recursion and DFS,Kevin Geng,Beginner,0B84cCW3wbL7fbkRrU2Z2MXNzdzQ,https://activities.tjhsst.edu/sct/lectures/1617/2016-10-21_Recursion_and_DFS.pdf
-2016-17,2016-10-21,LCA and 2^n Jump Pointers,Larry Wang,Advanced,0B84cCW3wbL7fUVZlUGJna3ZQWEE,https://activities.tjhsst.edu/sct/lectures/1617/2016-10-21_LCA_and_2_n_Jump_Pointers.pdf
-2016-17,2016-10-28,Shortest Paths,Kevin Geng,Beginner,0B84cCW3wbL7fUWw0ZWJENFA1aEk,https://activities.tjhsst.edu/sct/lectures/1617/2016-10-28_Shortest_Paths.pdf
-2016-17,2016-10-28,Segment Trees,Charles Zhao,Advanced,0B84cCW3wbL7fYjZIOVJaaVNCRVU,https://activities.tjhsst.edu/sct/lectures/1617/2016-10-28_Segment_Trees.pdf
-2016-17,2016-11-11,String Searching,"Larry Wang, Charles Zhao",,0B84cCW3wbL7fak5lMTZ2TV9UbEk,https://activities.tjhsst.edu/sct/lectures/1617/2016-11-11_String_Searching.pdf
-2016-17,2016-12-02,Introduction to Dynamic Programming,Charles Zhao,Beginner,0B84cCW3wbL7fRmZHemFCbEc5Z2s,https://activities.tjhsst.edu/sct/lectures/1617/2016-12-02_Intro_Dynamic_Programming.pdf
-2016-17,2016-12-02,2^n Dynamic Programming,"Lawrence Wang, Kevin Geng",Advanced,0B84cCW3wbL7fUVJfanhvSnctTUE,https://activities.tjhsst.edu/sct/lectures/1617/2016-12-02_Advanced_Dynamic_Programming.pdf
-2016-17,2016-12-08,Programming Language Tips,Kevin Geng,,0B84cCW3wbL7feTVLMWE0MG9MeHM,https://activities.tjhsst.edu/sct/lectures/1617/2016-12-08_Programming_Language_Tips.pdf
-2016-17,2016-12-16,Line Sweep,Kevin Geng,,0B84cCW3wbL7faWZIV095TVBHZjA,https://activities.tjhsst.edu/sct/lectures/1617/2016-12-16_Computational_Geo.pdf
-2016-17,2017-01-13,More Segment Trees,Kevin Geng,Advanced,0B84cCW3wbL7fdUZRaXdEbkpuVVU,https://activities.tjhsst.edu/sct/lectures/1617/2017-01-13_More_Segment_Trees.pdf
-2016-17,2017-01-27,Strongly Connected Components,"Kevin Geng, Lawrence Wang",,0B84cCW3wbL7fTnZFQ2gwdGJIcHc,https://activities.tjhsst.edu/sct/lectures/1617/2017-01-27_Strongly_Connected_Components.pdf
-2016-17,2017-02-17,Splay Trees,"Kevin Geng, Lawrence Wang",,0B84cCW3wbL7fXzRLeVVyTEhjZDg,https://activities.tjhsst.edu/sct/lectures/1617/2017-02-17_Splay_Trees.pdf
-2016-17,2017-03-31,Eulerian Tours,Kevin Geng,Beginner,0B84cCW3wbL7fdDRaVGJwcW5fZnc,https://activities.tjhsst.edu/sct/lectures/1617/2017-03-31_Eulerian_Tours.pdf
+2016-17,2016-09-23,Orientation Lecture,SCT Officers,,0B84cCW3wbL7fWGwxTVRrZ1FadjA,2016-09-23_Orientation.pdf
+2016-17,2016-09-30,Computational Complexity,Charles Zhao,Beginner,0B84cCW3wbL7fb2lEZXQzc3RTQ2c,2016-09-30_Computational_Complexity.pdf
+2016-17,2016-09-30,Union-Find,Kevin Geng,Advanced,0B84cCW3wbL7fdnFFNF9ESk5CTTA,2016-09-30_Union_Find.pdf
+2016-17,2016-10-03,Elementary Algorithms,Kevin Geng,Beginner,0B84cCW3wbL7fd1N6RWQxRjEtNmM,2016-10-03_Elementary_Algorithms.pdf
+2016-17,2016-10-03,Minimum Spanning Trees,"Larry Wang, Charles Zhao",Advanced,0B84cCW3wbL7fT0s2N3dfU3VVTk0,2016-10-03_MST.pdf
+2016-17,2016-10-21,Recursion and DFS,Kevin Geng,Beginner,0B84cCW3wbL7fbkRrU2Z2MXNzdzQ,2016-10-21_Recursion_and_DFS.pdf
+2016-17,2016-10-21,LCA and 2^n Jump Pointers,Larry Wang,Advanced,0B84cCW3wbL7fUVZlUGJna3ZQWEE,2016-10-21_LCA_and_2_n_Jump_Pointers.pdf
+2016-17,2016-10-28,Shortest Paths,Kevin Geng,Beginner,0B84cCW3wbL7fUWw0ZWJENFA1aEk,2016-10-28_Shortest_Paths.pdf
+2016-17,2016-10-28,Segment Trees,Charles Zhao,Advanced,0B84cCW3wbL7fYjZIOVJaaVNCRVU,2016-10-28_Segment_Trees.pdf
+2016-17,2016-11-11,String Searching,"Larry Wang, Charles Zhao",,0B84cCW3wbL7fak5lMTZ2TV9UbEk,2016-11-11_String_Searching.pdf
+2016-17,2016-12-02,Introduction to Dynamic Programming,Charles Zhao,Beginner,0B84cCW3wbL7fRmZHemFCbEc5Z2s,2016-12-02_Intro_Dynamic_Programming.pdf
+2016-17,2016-12-02,2^n Dynamic Programming,"Lawrence Wang, Kevin Geng",Advanced,0B84cCW3wbL7fUVJfanhvSnctTUE,2016-12-02_Advanced_Dynamic_Programming.pdf
+2016-17,2016-12-08,Programming Language Tips,Kevin Geng,,0B84cCW3wbL7feTVLMWE0MG9MeHM,2016-12-08_Programming_Language_Tips.pdf
+2016-17,2016-12-16,Line Sweep,Kevin Geng,,0B84cCW3wbL7faWZIV095TVBHZjA,2016-12-16_Computational_Geo.pdf
+2016-17,2017-01-13,More Segment Trees,Kevin Geng,Advanced,0B84cCW3wbL7fdUZRaXdEbkpuVVU,2017-01-13_More_Segment_Trees.pdf
+2016-17,2017-01-27,Strongly Connected Components,"Kevin Geng, Lawrence Wang",,0B84cCW3wbL7fTnZFQ2gwdGJIcHc,2017-01-27_Strongly_Connected_Components.pdf
+2016-17,2017-02-17,Splay Trees,"Kevin Geng, Lawrence Wang",,0B84cCW3wbL7fXzRLeVVyTEhjZDg,2017-02-17_Splay_Trees.pdf
+2016-17,2017-03-31,Eulerian Tours,Kevin Geng,Beginner,0B84cCW3wbL7fdDRaVGJwcW5fZnc,2017-03-31_Eulerian_Tours.pdf
 2016-17,2017-04-21,Random Number Generators,Jerry Huang,Guest lecture,,
-2016-17,2017-04-28,Pathfinding in Continuous Space,Daniel Wisdom,Guest lecture,0B84cCW3wbL7fNTk2clI3dW96T0E,https://activities.tjhsst.edu/sct/lectures/1617/2017-04-28_Continuous_Space_Pathfinding.pdf
-2016-17,2017-05-04,Shortest Paths,Arnav Bansal,Guest lecture,0B84cCW3wbL7fNktuXy1HalBwc3c,https://activities.tjhsst.edu/sct/lectures/1617/2017-05-04_Shortest_Paths.pdf
+2016-17,2017-04-28,Pathfinding in Continuous Space,Daniel Wisdom,Guest lecture,0B84cCW3wbL7fNTk2clI3dW96T0E,2017-04-28_Continuous_Space_Pathfinding.pdf
+2016-17,2017-05-04,Shortest Paths,Arnav Bansal,Guest lecture,0B84cCW3wbL7fNktuXy1HalBwc3c,2017-05-04_Shortest_Paths.pdf
 2016-17,2017-05-04,Simplifying Problems,Katherine Cheng,Guest lecture,,
-2016-17,2017-05-12,Bloom Filters and Skip Lists,Srinidhi Krishnamurthy,Guest lecture,0B84cCW3wbL7fVmlXd1pIS3VTSHc,https://activities.tjhsst.edu/sct/lectures/1617/2017-05-12_Skip_Lists_Bloom_Filters.pdf
-2016-17,2017-05-12,Image Segmentation,Mihir Patel,Guest lecture,0B84cCW3wbL7fNGgtMzg5YnYyZGc,https://activities.tjhsst.edu/sct/lectures/1617/2017-05-12_Image_Segmentation.pdf
-2016-17,2017-05-24,Suffix Arrays,Justin Zhang,Guest lecture,0B84cCW3wbL7fSnlMVmI4ZE1oVzQ,https://activities.tjhsst.edu/sct/lectures/1617/2017-05-24_Suffix_Arrays.pdf
-2016-17,2017-06-02,Aho-Corasick,Neil Thistlethwaite,Guest lecture,0B84cCW3wbL7faF9ya19hRUNURDg,https://activities.tjhsst.edu/sct/lectures/1617/2017-06-02_Aho_Corasick.pdf
+2016-17,2017-05-12,Bloom Filters and Skip Lists,Srinidhi Krishnamurthy,Guest lecture,0B84cCW3wbL7fVmlXd1pIS3VTSHc,2017-05-12_Skip_Lists_Bloom_Filters.pdf
+2016-17,2017-05-12,Image Segmentation,Mihir Patel,Guest lecture,0B84cCW3wbL7fNGgtMzg5YnYyZGc,2017-05-12_Image_Segmentation.pdf
+2016-17,2017-05-24,Suffix Arrays,Justin Zhang,Guest lecture,0B84cCW3wbL7fSnlMVmI4ZE1oVzQ,2017-05-24_Suffix_Arrays.pdf
+2016-17,2017-06-02,Aho-Corasick,Neil Thistlethwaite,Guest lecture,0B84cCW3wbL7faF9ya19hRUNURDg,2017-06-02_Aho_Corasick.pdf
 2016-17,2017-06-02,Heavy-Light Decomposition,Wassim Omais,Guest lecture,,
 ,,,,,,
-2017-18,2017-09-15,Orientation,SCT Officers,All,0B84cCW3wbL7fUU9mUTZ4UUVXOXc,https://activities.tjhsst.edu/sct/lectures/1718/2017-09-15_Orientation.pdf
-2017-18,2017-09-18,Contest Programming Intro,Srinidhi Krishnamurthy and Mihir Patel,Beginner,0B84cCW3wbL7feUROeHg3QjJqSW8,https://activities.tjhsst.edu/sct/lectures/1718/2017-09-18_Beginners_1:_Contest_Programming_Intro.pdf
-2017-18,2017-09-18,Union Find,Justin Zhang and Daniel Wisdom,Advanced,0B84cCW3wbL7fWGVrTjZNVk1lM00,https://activities.tjhsst.edu/sct/lectures/1718/2017-09-18_Union_Find.pdf
-2017-18,2017-09-29,Graph Theory Review,Mihir Patel,Beginner,0B84cCW3wbL7fMmRJZTBUN1liYzg,https://activities.tjhsst.edu/sct/lectures/1718/2017-09-29_Graph_Theory_Review.pdf
-2017-18,2017-09-29,Advanced Graph Theory,Daniel Wisdom,Advanced,0B84cCW3wbL7fdVdKZWFNeFVZOTQ,https://activities.tjhsst.edu/sct/lectures/1718/2017-09-29_Advanced_Graph_Theory.pdf
-2017-18,2017-10-06,Simple Range Queries,Justin Zhang,Beginner,0B_NuG53zAfg3eVRKTEVSbUFiSzQ,https://activities.tjhsst.edu/sct/lectures/1718/2017-10-06_Simple_Range_Queries.pdf
-2017-18,2017-10-06,Line Sweep and Convex Hull,Mihir Patel,Advanced,0B_NuG53zAfg3NUx5eUFEWnBudzA,https://activities.tjhsst.edu/sct/lectures/1718/2017-10-06_Line_Sweep_and_Convex_Hull.pdf
-2017-18,2017-10-20,Introduction to Dynamic Programming,Srinidhi Krishnamurthy,Beginner,0B_NuG53zAfg3a0xudDRURGpoQzA,https://activities.tjhsst.edu/sct/lectures/1718/2017-10-20_Introduction_to_Dynamic_Programming.pdf
-2017-18,2017-10-27,More Dynamic Programming,Daniel Wisdom,Beginner,0B_NuG53zAfg3Qm9JSmFKOHV0TVk,https://activities.tjhsst.edu/sct/lectures/1718/2017-10-27_More_Dynamic_Programming.pdf
-2017-18,2017-10-27,String Searching,Mihir Patel,Advanced,0B_NuG53zAfg3NnhlYU1LZnNocVk,https://activities.tjhsst.edu/sct/lectures/1718/2017-10-27_String_Searching.pdf
-2017-18,2017-11-10,Binary Search,Daniel Wisdom,Beginner,17vrp0mnT8wpbvJWPzQ4H4z8Hm-8hWMr5,https://activities.tjhsst.edu/sct/lectures/1718/2017-11-10_Binary_Search.pdf
-2017-18,2017-11-10,Binary Indexed Trees,Justin Zhang,Advanced,1QOXxwio_GGVszcwR4_avYfBeko42av8b,https://activities.tjhsst.edu/sct/lectures/1718/2017-11-10_Binary_Indexed_Trees.pdf
-2017-18,2017-12-01,Lowest Common Ancestor,Daniel Wisdom,Advanced,1Txvxp6cCPl2O7ta99KZDWDvLjgrF1FWA,https://activities.tjhsst.edu/sct/lectures/1718/2017-12-01_Lowest_Common_Ancestor.pdf
-2017-18,2017-12-08,Segment Trees,Justin Zhang,Advanced,1HziMoB0l0VwByTkRXzAVN8OfLkiv_Mqg,https://activities.tjhsst.edu/sct/lectures/1718/2017-12-08_Segment_Trees.pdf
-2017-18,2017-12-15,Beginner Contest Prep,Srinidhi Krishnamurthy,Beginner,1S6ZLfYoJj2GteOb9AlQCmkLQ2FVOeNUh,https://activities.tjhsst.edu/sct/lectures/1718/2017-12-15_Beginner_Contest_Prep.pdf
-2017-18,2017-12-15,Advanced Contest Prep,Daniel Wisdom,Advanced,1B-Pys9JMtVXqw_vr0DNac-u5aRERTIs2,https://activities.tjhsst.edu/sct/lectures/1718/2017-12-15_Advanced_Contest_Prep.pdf
-2017-18,2018-01-12,December USACO Bronze/Silver Contest Review,Mihir Patel,Beginner,1T9RSFIWZqraoz2AuPd9h5KRIAEbh4IzF,https://activities.tjhsst.edu/sct/lectures/1718/2018-01-12_December_USACO_Bronze_Silver_Contest_Review.pdf
-2017-18,2018-01-12,December USACO Gold/Platinum Contest Review,Justin Zhang,Advanced,1nliw3LI0vyPMs-wWkc46cKGvbREJm7gY,https://activities.tjhsst.edu/sct/lectures/1718/2018-01-12_December_USACO_Gold_Platinum_Contest_Review.pdf
-2017-18,2018-01-12,USACO January Bronze/Silver Post-Contest Explanations,Srinidhi Krishnamurthy,,,https://activities.tjhsst.edu/sct/lectures/1718/USACO_January_Bronze_Silver_Post_Contest.pdf
-2017-18,2018-01-19,Suffix Arrays and Longest Common Prefix,Daniel Wisdom,Advanced,1G54Uog5mAUU0STH99m5Jx9LD2QEFSphW,https://activities.tjhsst.edu/sct/lectures/1718/2018-01-19_Suffix_Arrays_and_Longest_Common_Prefix.pdf
-2017-18,2018-02-09,January USACO Gold/Plat Contest Review (√N decomposition),Justin Zhang and Daniel Wisdom,Advanced,1NVxIezUfTQ5E6fSDW9LpuZtVkpc-Yerf,https://activities.tjhsst.edu/sct/lectures/1718/2018-02-09_USACO_Gold_Plat_January_Contest_Review_(square-root_decomposition).pdf
-2017-18,2018-02-16,Treaps,Justin Zhang,Advanced,1bkR1tD0NQUmOHpbqC4h_0Kzdyy75-5xy,https://activities.tjhsst.edu/sct/lectures/1718/2018-02-16_Treaps.pdf
-2017-18,2018-02-23,Strongly Connected Components and Biconnected Components,Daniel Wisdom,Advanced,1GDAcfYe8JvRTqTIZ4X_hiIgfJ8JDex0I,https://activities.tjhsst.edu/sct/lectures/1718/2018-02-23_Strongly_Connected_Components_and_Biconnected_Components.pdf
-2017-18,2018-03-02,February USACO Gold/Plat Contest Review,Mihir Patel,Advanced,1LLrccvcTpdNTGbc3GC3hVNAT6mtPZLWS,https://activities.tjhsst.edu/sct/lectures/1718/2018-03-02_February_USACO_Gold_Plat_Contest_Review.pdf
-2017-18,2018-03-23,Heavy Light Decomposition,Daniel Wisdom,Advanced,1rAvEGQ37tHkhOaF-VGUlKoK-IribCypI,https://activities.tjhsst.edu/sct/lectures/1718/2018-03-23_Heavy_Light_Decomposition.pdf
-2017-18,2018-04-06,US Open Plat Contest Review,Justin Zhang,Advanced,1vLVqyhRVgLACy9qsPkGqljRAfl88gyKI,https://activities.tjhsst.edu/sct/lectures/1718/2018-04-06_US_Open_Plat_Contest_Review.pdf
+2017-18,2017-09-15,Orientation,SCT Officers,All,0B84cCW3wbL7fUU9mUTZ4UUVXOXc,2017-09-15_Orientation.pdf
+2017-18,2017-09-18,Contest Programming Intro,Srinidhi Krishnamurthy and Mihir Patel,Beginner,0B84cCW3wbL7feUROeHg3QjJqSW8,2017-09-18_Beginners_1:_Contest_Programming_Intro.pdf
+2017-18,2017-09-18,Union Find,Justin Zhang and Daniel Wisdom,Advanced,0B84cCW3wbL7fWGVrTjZNVk1lM00,2017-09-18_Union_Find.pdf
+2017-18,2017-09-29,Graph Theory Review,Mihir Patel,Beginner,0B84cCW3wbL7fMmRJZTBUN1liYzg,2017-09-29_Graph_Theory_Review.pdf
+2017-18,2017-09-29,Advanced Graph Theory,Daniel Wisdom,Advanced,0B84cCW3wbL7fdVdKZWFNeFVZOTQ,2017-09-29_Advanced_Graph_Theory.pdf
+2017-18,2017-10-06,Simple Range Queries,Justin Zhang,Beginner,0B_NuG53zAfg3eVRKTEVSbUFiSzQ,2017-10-06_Simple_Range_Queries.pdf
+2017-18,2017-10-06,Line Sweep and Convex Hull,Mihir Patel,Advanced,0B_NuG53zAfg3NUx5eUFEWnBudzA,2017-10-06_Line_Sweep_and_Convex_Hull.pdf
+2017-18,2017-10-20,Introduction to Dynamic Programming,Srinidhi Krishnamurthy,Beginner,0B_NuG53zAfg3a0xudDRURGpoQzA,2017-10-20_Introduction_to_Dynamic_Programming.pdf
+2017-18,2017-10-27,More Dynamic Programming,Daniel Wisdom,Beginner,0B_NuG53zAfg3Qm9JSmFKOHV0TVk,2017-10-27_More_Dynamic_Programming.pdf
+2017-18,2017-10-27,String Searching,Mihir Patel,Advanced,0B_NuG53zAfg3NnhlYU1LZnNocVk,2017-10-27_String_Searching.pdf
+2017-18,2017-11-10,Binary Search,Daniel Wisdom,Beginner,17vrp0mnT8wpbvJWPzQ4H4z8Hm-8hWMr5,2017-11-10_Binary_Search.pdf
+2017-18,2017-11-10,Binary Indexed Trees,Justin Zhang,Advanced,1QOXxwio_GGVszcwR4_avYfBeko42av8b,2017-11-10_Binary_Indexed_Trees.pdf
+2017-18,2017-12-01,Lowest Common Ancestor,Daniel Wisdom,Advanced,1Txvxp6cCPl2O7ta99KZDWDvLjgrF1FWA,2017-12-01_Lowest_Common_Ancestor.pdf
+2017-18,2017-12-08,Segment Trees,Justin Zhang,Advanced,1HziMoB0l0VwByTkRXzAVN8OfLkiv_Mqg,2017-12-08_Segment_Trees.pdf
+2017-18,2017-12-15,Beginner Contest Prep,Srinidhi Krishnamurthy,Beginner,1S6ZLfYoJj2GteOb9AlQCmkLQ2FVOeNUh,2017-12-15_Beginner_Contest_Prep.pdf
+2017-18,2017-12-15,Advanced Contest Prep,Daniel Wisdom,Advanced,1B-Pys9JMtVXqw_vr0DNac-u5aRERTIs2,2017-12-15_Advanced_Contest_Prep.pdf
+2017-18,2018-01-12,December USACO Bronze/Silver Contest Review,Mihir Patel,Beginner,1T9RSFIWZqraoz2AuPd9h5KRIAEbh4IzF,2018-01-12_December_USACO_Bronze_Silver_Contest_Review.pdf
+2017-18,2018-01-12,December USACO Gold/Platinum Contest Review,Justin Zhang,Advanced,1nliw3LI0vyPMs-wWkc46cKGvbREJm7gY,2018-01-12_December_USACO_Gold_Platinum_Contest_Review.pdf
+2017-18,2018-01-12,USACO January Bronze/Silver Post-Contest Explanations,Srinidhi Krishnamurthy,,,USACO_January_Bronze_Silver_Post_Contest.pdf
+2017-18,2018-01-19,Suffix Arrays and Longest Common Prefix,Daniel Wisdom,Advanced,1G54Uog5mAUU0STH99m5Jx9LD2QEFSphW,2018-01-19_Suffix_Arrays_and_Longest_Common_Prefix.pdf
+2017-18,2018-02-09,January USACO Gold/Plat Contest Review (√N decomposition),Justin Zhang and Daniel Wisdom,Advanced,1NVxIezUfTQ5E6fSDW9LpuZtVkpc-Yerf,2018-02-09_USACO_Gold_Plat_January_Contest_Review_(square-root_decomposition).pdf
+2017-18,2018-02-16,Treaps,Justin Zhang,Advanced,1bkR1tD0NQUmOHpbqC4h_0Kzdyy75-5xy,2018-02-16_Treaps.pdf
+2017-18,2018-02-23,Strongly Connected Components and Biconnected Components,Daniel Wisdom,Advanced,1GDAcfYe8JvRTqTIZ4X_hiIgfJ8JDex0I,2018-02-23_Strongly_Connected_Components_and_Biconnected_Components.pdf
+2017-18,2018-03-02,February USACO Gold/Plat Contest Review,Mihir Patel,Advanced,1LLrccvcTpdNTGbc3GC3hVNAT6mtPZLWS,2018-03-02_February_USACO_Gold_Plat_Contest_Review.pdf
+2017-18,2018-03-23,Heavy Light Decomposition,Daniel Wisdom,Advanced,1rAvEGQ37tHkhOaF-VGUlKoK-IribCypI,2018-03-23_Heavy_Light_Decomposition.pdf
+2017-18,2018-04-06,US Open Plat Contest Review,Justin Zhang,Advanced,1vLVqyhRVgLACy9qsPkGqljRAfl88gyKI,2018-04-06_US_Open_Plat_Contest_Review.pdf
 ,,,,,,
-2018-19,2018-09-14,Orientation,SCT Officers,All,,https://activities.tjhsst.edu/sct/lectures/1819/2018_09_14_Orientation.pdf
-2018-19,2018-09-21,Union Find,George Tang,Beginner,,https://activities.tjhsst.edu/sct/lectures/1819/2018_09_21_Union_Find.pdf
-2018-19,2018-09-21,Elementary Algorithms,Daniel Wisdom,Beginner,,https://activities.tjhsst.edu/sct/lectures/1819/2018_09_21_Elementary_Algorithms.pdf 
-2018-19,2018-09-28,Basic Graph Theory,Jongwan Kim,Beginner,,https://activities.tjhsst.edu/sct/lectures/1819/2018_09_28_Basic_Graph_Theory.pdf
-2018-19,2018-09-28,Strongly Connected Components and Biconnected Components,Charlie Gunn,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2018_09_28_SCC__BCC.pdf
-2018-19,2018-10-05,Trees,George Tang,Beginner,,https://activities.tjhsst.edu/sct/lectures/1819/2018_10_5_Trees.pdf
-2018-19,2018-10-19,Introduction To Dynammic Programming,Daniel Wisdom,Beginner,,https://activities.tjhsst.edu/sct/lectures/1819/2018_10_19_Intro_to_DP.pdf
-2018-19,2018-10-19,Segment Trees,George Tang,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2018_10_19_Segment_Trees.pdf
-2018-19,2018-11-30,Binary Indexed Trees,Daniel Wisdom,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2018_11_30_Binary_Indexed_Trees.pdf
-2018-19,2018-12-07,Suffix Arrays,Charlie Gunn,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2018_12_07_Suffix_Arrays.pdf
-2018-19,2018-12-21,USACO Review,SCT Officers,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2018_12_21_USACO_Review.pdf
-2018-19,2019-01-08,Monotonic Queues and USACO Review,Daniel Wisdom,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2019_1_8_Monotonic_Queues_and_USACO_Review.pdf
-2018-19,2019-02-11,Least Common Ancestor,Daniel Wisdom,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2019_2_11_LCA.pdf
-2018-19,2019-02-22,Minimum Spanning Tree,Jongwan Kim,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2019_2_22_MST.pdf
-2018-19,2019-03-08,February USACO Review,Daniel Wisdom,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2019_3_8_February_USACO_Review.pdf
-2018-19,2019-03-15,Heavy Light Decompostion,Daniel Wisdom,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2019_3_15_HLD.pdf
-2018-19,2019-03-22,Splay Trees,George Tang,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2019_03_22_Splay_Trees.pdf
-2018-19,2019-03-29,Suffix Arrays and Longest Common Prefix,Daniel Wisdom,Advanced,,https://activities.tjhsst.edu/sct/lectures/1819/2019_03_29_Suffix_Arrays_and_LCP.pdf
+2018-19,2018-09-14,Orientation,SCT Officers,All,,2018_09_14_Orientation.pdf
+2018-19,2018-09-21,Union Find,George Tang,Beginner,,2018_09_21_Union_Find.pdf
+2018-19,2018-09-21,Elementary Algorithms,Daniel Wisdom,Beginner,,2018_09_21_Elementary_Algorithms.pdf
+2018-19,2018-09-28,Basic Graph Theory,Jongwan Kim,Beginner,,2018_09_28_Basic_Graph_Theory.pdf
+2018-19,2018-09-28,Strongly Connected Components and Biconnected Components,Charlie Gunn,Advanced,,2018_09_28_SCC__BCC.pdf
+2018-19,2018-10-05,Trees,George Tang,Beginner,,2018_10_5_Trees.pdf
+2018-19,2018-10-19,Introduction To Dynammic Programming,Daniel Wisdom,Beginner,,2018_10_19_Intro_to_DP.pdf
+2018-19,2018-10-19,Segment Trees,George Tang,Advanced,,2018_10_19_Segment_Trees.pdf
+2018-19,2018-11-30,Binary Indexed Trees,Daniel Wisdom,Advanced,,2018_11_30_Binary_Indexed_Trees.pdf
+2018-19,2018-12-07,Suffix Arrays,Charlie Gunn,Advanced,,2018_12_07_Suffix_Arrays.pdf
+2018-19,2018-12-21,USACO Review,SCT Officers,Advanced,,2018_12_21_USACO_Review.pdf
+2018-19,2019-01-08,Monotonic Queues and USACO Review,Daniel Wisdom,Advanced,,2019_1_8_Monotonic_Queues_and_USACO_Review.pdf
+2018-19,2019-02-11,Least Common Ancestor,Daniel Wisdom,Advanced,,2019_2_11_LCA.pdf
+2018-19,2019-02-22,Minimum Spanning Tree,Jongwan Kim,Advanced,,2019_2_22_MST.pdf
+2018-19,2019-03-08,February USACO Review,Daniel Wisdom,Advanced,,2019_3_8_February_USACO_Review.pdf
+2018-19,2019-03-15,Heavy Light Decompostion,Daniel Wisdom,Advanced,,2019_3_15_HLD.pdf
+2018-19,2019-03-22,Splay Trees,George Tang,Advanced,,2019_03_22_Splay_Trees.pdf
+2018-19,2019-03-29,Suffix Arrays and Longest Common Prefix,Daniel Wisdom,Advanced,,2019_03_29_Suffix_Arrays_and_LCP.pdf
 ,,,,,,
-2019-20,2019-09-20,Orientation,SCT Officers,All,,https://activities.tjhsst.edu/sct/lectures/1920/2019_09_20_Orientation.pdf
-2019-20,2019-10-04,Complexity and C++,Neeyanth Kopparapu,Intermediate,,https://activities.tjhsst.edu/sct/lectures/1920/2019_10_04_Complexity_and_C__.pdf
-2019-20,2019-10-04,Complexity and Knapsack DP,Patrick Zhang,Advanced,,https://activities.tjhsst.edu/sct/lectures/1920/2019_10_04_Complexity_and_Knapsack_DP.pdf
-2019-20,2019-10-11,Searches,Havish Malladi,Intermediate,,https://activities.tjhsst.edu/sct/lectures/1920/2019_10_11_Searches.pdf
-2019-20,2019-10-11,More Advanced DP,Patrick Zhang,Advanced,,https://activities.tjhsst.edu/sct/lectures/1920/2019_10_11_More_Advanced_DP.pdf 
-2019-20,2019-10-18,Union Find and MST,Neeyanth Kopparapu,Intermediate,,https://activities.tjhsst.edu/sct/lectures/1920/2019_10_18_Union_Find_and_MST.pdf
-2019-20,2019-10-18,Graph Theory,Richard Zhan,Advanced,,https://activities.tjhsst.edu/sct/lectures/1920/2019_10_18_Graph_Theory.pdf
-2019-20,2019-10-25,Dynamic Programming,Patrick Zhang,Intermediate,,https://activities.tjhsst.edu/sct/lectures/1920/2019_10_25_Knapsack_DP.pdf 
-2019-20,2019-10-25,Lowest Common Ancestor,Richard Zhan,Advanced,,https://activities.tjhsst.edu/sct/lectures/1920/2019_10_25_LCA.pdf
-2019-20,2019-11-01,Strongly Connected Components ,Neeyanth Kopparapu,Intermediate,,https://activities.tjhsst.edu/sct/lectures/1920/2019_11_01_Strongly_Connected_Components.pdf
-2019-20,2019-11-01,Binary Index Trees,Patrick Zhang,Advanced,,https://activities.tjhsst.edu/sct/lectures/1920/2019_11_01_Binary_Index_Trees.pdf
-2019-20,2019-11-15,Trees,Havish Malladi,Intermediate,,https://activities.tjhsst.edu/sct/lectures/1920/2019_11_15_Trees.pdf
-2019-20,2019-11-15,Segment Trees,Richard Zhan,Advanced,,https://activities.tjhsst.edu/sct/lectures/1920/2019_11_15_Segment_Trees.pdf
-2019-20,2019-11-22,Computational Geometry,Richard Zhan,Advanced,,https://activities.tjhsst.edu/sct/lectures/1920/2019_11_22_Computational_Geometry.pdf
-2019-20,2019-12-05,USACO Silver and Gold Review,Neeyanth Kopparapu and Patrick Zhang,All,,https://activities.tjhsst.edu/sct/lectures/1920/2019_12_5_USACO_Silver_and_Gold_Review.pdf
-2019-20,2019-12-19,December Gold Review,"Josh Zhang, Pranav Mathur, Ray Bai",All,,https://activities.tjhsst.edu/sct/lectures/1920/2019_12_19_Gold_Review.pdf
-2019-20,2020-01-10,December Platinum Review,Ray Bai and Danny Mittal,All,,https://activities.tjhsst.edu/sct/lectures/1920/2020_1_10_Plat_Review.pdf 
-2019-20,2020-01-17,Heavy Light Decomposition,Pranav Mathur,All,,https://activities.tjhsst.edu/sct/lectures/1920/2020_1_17_HLD.pdf
-2019-20,2020-02-07,Rolling Hash,Danny Mittal,Intermediate,,https://activities.tjhsst.edu/sct/lectures/1920/2020_2_7_Rolling_Hash.pdf
-2019-20,2020-02-07,January Platinum Review,"Ray Bai, Helena Liu",Advanced,,https://activities.tjhsst.edu/sct/lectures/1920/2020_2_7_Plat_Review.pdf
-2019-20,2020-02-21,Monotonic Queues,Sarah Zhang,All,,https://activities.tjhsst.edu/sct/lectures/1920/2020_2_21_Monotonic_Queues.pdf
-2019-20,2020-03-06,Bitmask Dynamic Programming,Helena Liu,All,,https://activities.tjhsst.edu/sct/lectures/1920/2020_3_6_Bitmask_DP.pdf 
-2019-20,2020-04-30,Advanced String Algorithms,Spandan Das,All,,https://activities.tjhsst.edu/sct/lectures/1920/2020_4_30_String_Algorithms.pdf 
-2019-20,2020-04-30,RMQ with Fischer-Heun,Stephen Huan,All,,https://activities.tjhsst.edu/sct/lectures/1920/2020_4_30_RMQ.pdf 
-2019-20,2020-04-30,Flow,Udbhav Muthakana,All,,https://activities.tjhsst.edu/sct/lectures/1920/2020_4_30_Flow.pdf
+2019-20,2019-09-20,Orientation,SCT Officers,All,,2019_09_20_Orientation.pdf
+2019-20,2019-10-04,Complexity and C++,Neeyanth Kopparapu,Intermediate,,2019_10_04_Complexity_and_C__.pdf
+2019-20,2019-10-04,Complexity and Knapsack DP,Patrick Zhang,Advanced,,2019_10_04_Complexity_and_Knapsack_DP.pdf
+2019-20,2019-10-11,Searches,Havish Malladi,Intermediate,,2019_10_11_Searches.pdf
+2019-20,2019-10-11,More Advanced DP,Patrick Zhang,Advanced,,2019_10_11_More_Advanced_DP.pdf
+2019-20,2019-10-18,Union Find and MST,Neeyanth Kopparapu,Intermediate,,2019_10_18_Union_Find_and_MST.pdf
+2019-20,2019-10-18,Graph Theory,Richard Zhan,Advanced,,2019_10_18_Graph_Theory.pdf
+2019-20,2019-10-25,Dynamic Programming,Patrick Zhang,Intermediate,,2019_10_25_Knapsack_DP.pdf
+2019-20,2019-10-25,Lowest Common Ancestor,Richard Zhan,Advanced,,2019_10_25_LCA.pdf
+2019-20,2019-11-01,Strongly Connected Components,Neeyanth Kopparapu,Intermediate,,2019_11_01_Strongly_Connected_Components.pdf
+2019-20,2019-11-01,Binary Index Trees,Patrick Zhang,Advanced,,2019_11_01_Binary_Index_Trees.pdf
+2019-20,2019-11-15,Trees,Havish Malladi,Intermediate,,2019_11_15_Trees.pdf
+2019-20,2019-11-15,Segment Trees,Richard Zhan,Advanced,,2019_11_15_Segment_Trees.pdf
+2019-20,2019-11-22,Computational Geometry,Richard Zhan,Advanced,,2019_11_22_Computational_Geometry.pdf
+2019-20,2019-12-05,USACO Silver and Gold Review,Neeyanth Kopparapu and Patrick Zhang,All,,2019_12_5_USACO_Silver_and_Gold_Review.pdf
+2019-20,2019-12-19,December Gold Review,"Josh Zhang, Pranav Mathur, Ray Bai",All,,2019_12_19_Gold_Review.pdf
+2019-20,2020-01-10,December Platinum Review,Ray Bai and Danny Mittal,All,,2020_1_10_Plat_Review.pdf
+2019-20,2020-01-17,Heavy Light Decomposition,Pranav Mathur,All,,2020_1_17_HLD.pdf
+2019-20,2020-02-07,Rolling Hash,Danny Mittal,Intermediate,,2020_2_7_Rolling_Hash.pdf
+2019-20,2020-02-07,January Platinum Review,"Ray Bai, Helena Liu",Advanced,,2020_2_7_Plat_Review.pdf
+2019-20,2020-02-21,Monotonic Queues,Sarah Zhang,All,,2020_2_21_Monotonic_Queues.pdf
+2019-20,2020-03-06,Bitmask Dynamic Programming,Helena Liu,All,,2020_3_6_Bitmask_DP.pdf
+2019-20,2020-04-30,Advanced String Algorithms,Spandan Das,All,,2020_4_30_String_Algorithms.pdf
+2019-20,2020-04-30,RMQ with Fischer-Heun,Stephen Huan,All,,2020_4_30_RMQ.pdf
+2019-20,2020-04-30,Flow,Udbhav Muthakana,All,,2020_4_30_Flow.pdf
 ,,,,,,
-2020-21,2020-10-02,Orientation,SCT Officers,All,,https://activities.tjhsst.edu/sct/lectures/2021/2020_10_02_Orientation.pdf
-2020-21,2020-10-09,Standard Data Structures: Sets and Maps,ICT and SCT Officers,Beginner,,https://activities.tjhsst.edu/sct/lectures/2021/2020_10_09_SCT_Sets_and_Maps.pdf
+2020-21,2020-10-02,Orientation,SCT Officers,All,,2020_10_02_Orientation.pdf
+2020-21,2020-10-09,Standard Data Structures: Sets and Maps,ICT and SCT Officers,Beginner,,2020_10_09_SCT_Sets_and_Maps.pdf
