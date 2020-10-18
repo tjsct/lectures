@@ -149,7 +149,6 @@ year,date,title,author,level,google_drive_id,link
 2016-17,2017-01-13,More Segment Trees,Kevin Geng,Advanced,0B84cCW3wbL7fdUZRaXdEbkpuVVU,https://activities.tjhsst.edu/sct/lectures/1617/2017-01-13_More_Segment_Trees.pdf
 2016-17,2017-01-27,Strongly Connected Components,"Kevin Geng, Lawrence Wang",,0B84cCW3wbL7fTnZFQ2gwdGJIcHc,https://activities.tjhsst.edu/sct/lectures/1617/2017-01-27_Strongly_Connected_Components.pdf
 2016-17,2017-02-17,Splay Trees,"Kevin Geng, Lawrence Wang",,0B84cCW3wbL7fXzRLeVVyTEhjZDg,https://activities.tjhsst.edu/sct/lectures/1617/2017-02-17_Splay_Trees.pdf
-2016-17,2017-03-10,Network Flow,Charles Zhao,,,https://activities.tjhsst.edu/sct/lectures/1617/2017_03_10_Network_Flow.pdf
 2016-17,2017-03-31,Eulerian Tours,Kevin Geng,Beginner,0B84cCW3wbL7fdDRaVGJwcW5fZnc,https://activities.tjhsst.edu/sct/lectures/1617/2017-03-31_Eulerian_Tours.pdf
 2016-17,2017-04-21,Random Number Generators,Jerry Huang,Guest lecture,,
 2016-17,2017-04-28,Pathfinding in Continuous Space,Daniel Wisdom,Guest lecture,0B84cCW3wbL7fNTk2clI3dW96T0E,https://activities.tjhsst.edu/sct/lectures/1617/2017-04-28_Continuous_Space_Pathfinding.pdf
@@ -179,7 +178,7 @@ year,date,title,author,level,google_drive_id,link
 2017-18,2017-12-15,Advanced Contest Prep,Daniel Wisdom,Advanced,1B-Pys9JMtVXqw_vr0DNac-u5aRERTIs2,https://activities.tjhsst.edu/sct/lectures/1718/2017-12-15_Advanced_Contest_Prep.pdf
 2017-18,2018-01-12,December USACO Bronze/Silver Contest Review,Mihir Patel,Beginner,1T9RSFIWZqraoz2AuPd9h5KRIAEbh4IzF,https://activities.tjhsst.edu/sct/lectures/1718/2018-01-12_December_USACO_Bronze_Silver_Contest_Review.pdf
 2017-18,2018-01-12,December USACO Gold/Platinum Contest Review,Justin Zhang,Advanced,1nliw3LI0vyPMs-wWkc46cKGvbREJm7gY,https://activities.tjhsst.edu/sct/lectures/1718/2018-01-12_December_USACO_Gold_Platinum_Contest_Review.pdf
-2017-18,2018-01-12,USACO January Bronze/Silver Post-Contest Explanations,Srinidhi Krishnamurthy,,,https://activities.tjhsst.edu/sct/lectures/1718/USACO_January_Bronze_Silver_Post_Contest.pdf
+2017-18,2018-01-12,USACO Janurary Bronze/Silver Post-Contest Explanations,Srinidhi Krishnamurthy,,,https://activities.tjhsst.edu/sct/lectures/1718/USACO_January_Bronze_Silver_Post_Contest.pdf
 2017-18,2018-01-19,Suffix Arrays and Longest Common Prefix,Daniel Wisdom,Advanced,1G54Uog5mAUU0STH99m5Jx9LD2QEFSphW,https://activities.tjhsst.edu/sct/lectures/1718/2018-01-19_Suffix_Arrays_and_Longest_Common_Prefix.pdf
 2017-18,2018-02-09,January USACO Gold/Plat Contest Review (√N decomposition),Justin Zhang and Daniel Wisdom,Advanced,1NVxIezUfTQ5E6fSDW9LpuZtVkpc-Yerf,https://activities.tjhsst.edu/sct/lectures/1718/2018-02-09_USACO_Gold_Plat_January_Contest_Review_(square-root_decomposition).pdf
 2017-18,2018-02-16,Treaps,Justin Zhang,Advanced,1bkR1tD0NQUmOHpbqC4h_0Kzdyy75-5xy,https://activities.tjhsst.edu/sct/lectures/1718/2018-02-16_Treaps.pdf
