@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+
+\title{Programming Language Tips}
+\author{Kevin Geng}
+\date{8 December 2016}
+
+\begin{document}
+
+\maketitle
+
+\section{Java tips}
+
+\subsection{Input/output}
+
+\begin{itemize}
+    \item Standard input and output means \verb|System.in| and \verb|System.out|. This is like typing in the console.
+    \item Most of the time, \verb|new Scanner(System.in)| should work fine for reading input. However, a \verb|BufferedReader| and \verb|StringTokenizer| can be faster.
+
+    \item USACO requires you to read from and write to files, not standard input/output. The magical incantation in this case is:
+    \begin{lstlisting}
+BufferedReader br = new BufferedReader(new FileReader("problem.in"));
+PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("problem.out")));
+	\end{lstlisting}
+
+    \item You can reassign standard input/output using \verb|System.setIn()| and \verb|System.setOut()|. Alternatively, you can do this from the console: \verb|java MyClass < input.txt > output.txt|.
+    \item If you are using standard output, you can use standard error, or \verb|System.err|, to print debug information. It works just like \verb|System.out| does.
+    \item C-style string formatting using \verb|System.out.printf()| or \verb|String.format()| can make things a lot more readable (though don't forget the \verb|\n| at the end!). Compare:
+    \begin{lstlisting}
+System.out.println("Ints: " + a + ", " + b + ". Strings: " + c + ", " + d + ".");
+System.out.printf("Ints: %d, %d. Strings: %s, %s.\n", a, b, c, d);
+\end{lstlisting}
+    \item It does take time to print things. If you're printing a lot of debug information in a loop, consider removing it.
+\end{itemize}
+
+\subsection{Standard library}
+
+\begin{itemize}
+    \item For importing things, \verb|import java.io.*; import java.util.*;| is usually enough. Your IDE may be able to automatically import classes for you.
+    \item The \verb|@Override| annotation makes sure you're actually overriding a superclass method.
+    \item For arrays, the utility class \verb|java.util.Arrays| is your friend (\verb|binarySearch(a, key)|, \verb|copyOf(a, newLength)|, \verb|fill(a, val)|, \verb|sort(a)|)! For collections, \verb|java.util.Collections| contains all those and more.
+    \item Some IDEs can automatically generate \verb|equals()| and \verb|hashCode()| for you. For arrays, use    \verb|Arrays.deepEquals| and \verb|Arrays.deepHashCode|.
+    \item You can create a \verb|PriorityQueue| or \verb|TreeMap| that uses a custom \verb|Comparator| instead of creating a custom class that overrides \verb|Comparable|.
+    \item \verb|Long.compare(a, b)| and \verb|Double.compare(a, b)| can help you with implementing \verb|compareTo|.
+\end{itemize}
+
+\subsection{Gotchas}
+
+\begin{itemize}
+    \item Never use \verb|==| unless you are comparing integers. Even then, make sure you are comparing primitives and not \verb|Integer| objects! Instead, use \verb|equals()|, but watch out for \verb|NullPointerException| when you do so. It's safer to say \verb|"hello".equals(myString)| than the other way around.
+    \item When working with money, try to work in cents to avoid rounding issues with floating-point. Then do \verb|String.format("%.2f", n / 100.0)| to get dollars.
+    \item Concatenating strings in a loop will have $O(n^2)$ performance. Instead, use \verb|StringBuilder|.
+    \item Certain Codeforces problem writers will create test cases specially designed to make \verb|Arrays.sort()|, which uses Quicksort, take quadratic time. If this happens, use \verb|Integer[]| or \verb|ArrayList<integer>|, which will use Mergesort.
+\end{itemize}
+
+
+\section{Python tips}
+
+\subsection{Input/output}
+
+\begin{itemize}
+    \item Read a line of tokens: \verb|input().split()|. Read a line of ints: \verb|list(map(int, input().split()))|
+    \item Print an array separated by spaces: \verb|print(' '.join(map(str, arr)))|
+    \item Print to standard error, without a newline: \verb|print('Test', file=sys.stderr, end='')|
+    \item New-style string formatting is nice:
+    \begin{lstlisting}
+print("Ints: %d, %d. Strings: %s, %s." % (a, b, c, d))
+print("Ints: {}, {}. Strings: {}, {}.".format(a, b, c, d))
+\end{lstlisting}
+\end{itemize}
+
+\subsection{Standard library}
+
+\begin{itemize}
+    \item The \verb|itertools| module is quite excellent. In particular, see \verb|product()|, \verb|permutations()|, and \verb|combinations()|, which are annoying to code otherwise.
+    \item The \verb|collections| module contains \verb|defaultdict|, which sets default values for keys when you access them instead of throwing an error. Even better is \verb|Counter|, which is a dictionary that counts the number of time an element occurs in a list. Finally, there's \verb|collections.deque| for a stack/queue.
+    \item There is a priority queue in the form of \verb|heapq| which you can use tuples with... but honestly, instead of trying to figure it out, just use Java instead. (The \verb|queue| module is designed for multithreading, so it'll be slower.)
+\end{itemize}
+
+\subsection{Gotchas}
+
+\begin{itemize}
+    \item Python is much slower than other programming languages. Avoid it when speed matters.
+    \item Everything above is for Python 3. If you use Python 2, don't forget about \verb|raw_input|, integer division, and int/long, among other things. The \verb|__future__| module can give you true division and the print function.
+\end{itemize}
+
+\end{document}

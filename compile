@@ -1,0 +1,22 @@
+#!/usr/bin/env fish
+# compile files in source into a PDF automatically
+# ./compile in repository root
+
+function compile --description "make PDF and symlink to pdfs"
+  set tokens (string split "/" -- $argv[1])
+  set name (string join "_" -- (string split " " -- $tokens[-2]))
+  set path (string join "/" -- $tokens[1..-2])
+  set pdf (string split ".tex" -- $argv[-1])[1]".pdf"
+  # compile and link copied pdf to pdfs
+  set original (pwd)
+  cd "$path"
+  latexmk -pdf -shell-escape $tokens[-1]
+  cd "$original" 
+  ln "$pdf" "pdfs/anrd/"$name".pdf"
+end
+
+for path in source/anrd/**/*.tex
+  compile "$path"
+  # echo $path
+end
+

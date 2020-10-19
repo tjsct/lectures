@@ -235,58 +235,25 @@ year,date,title,author,level,google_drive_id,filename
 2020-21,2020-10-02,Orientation,SCT Officers,All,,2020_10_02_Orientation.pdf
 2020-21,2020-10-09,Standard Data Structures: Sets and Maps,ICT and SCT Officers,Beginner,,2020_10_09_SCT_Sets_and_Maps.pdf
 ,,,,,,
-Standard,000,Introduction,,,,
+Standard,000,Introduction,,,,2019_09_20_Orientation.pdf
 Standard,010,Programming Contests,,,,2017-09-18_Beginners_1:_Contest_Programming_Intro.pdf
-Standard,020,Programming Languages,,,,
-Standard,030,File I/O,,,,
-Standard,100,Complexity and Big-O,,,,
-Standard,110,Binary Search,,,,
-Standard,120,Sorting, ,,,
-Standard,200,"Arrays, Stacks, Queues, Sets, Maps",,,,
-Standard,210,"Trees, Binary Search Trees",,,,
-Standard,212,AVL Trees,,,,
-Standard,215,Splay Trees,,,,
-Standard,217,Treaps,,,,
-Standard,220,Heaps and Priority Queues,,,,
-Standard,225,Monotonic Queue,,,,
-Standard,230,Disjoint-Set (Union-Find),,,,
-Standard,240,Binary Indexed Trees (BITs),,,,
-Standard,250,Segment Trees and Lazy Propagation,,,,
-Standard,260,Heavy-light Decomposition,,,,
-Standard,265,Square Root Bucketing ,,,,
-Standard,270,Fischer-Heun Structure,,,,
-Standard,280,Bloom Filters and Skip Lists,,,,
-Standard,300,Dynamic Programming (DP),,,,
-Standard,310,Knapsack DP,,,,
-Standard,320,Advanced DP,,,,
-Standard,330,DP on Trees,,,,
-Standard,340,Bitmask DP,,,,
-Standard,350,Greedy Algorithms,,,,
-Standard,400,Basic Graphs,,,,
-Standard,410,Breadth-First-Search (BFS) and Depth-First-Search (DFS),,,,
-Standard,415,Topological Sort,,,,
-Standard,420,"Shortest Path (Dijkstra, Floyd-Warshall, Bellman-Ford)",,,,
-Standard,423,Heuristical Shortest Path (A*),,,,
-Standard,426,Continuous Pathfinding,,,,2017-04-28_Continuous_Space_Pathfinding.pdf
-Standard,430,Minimum Spanning Tree,,,,
-Standard,440,Lowest Common Ancestor,,,,
-Standard,450,Connected Components and Strongly Connected Components,,,,
-Standard,460,Eulerian Tour,,,,
-Standard,470,Centroid Decomposition,,,,
-Standard,480,Maximum Flow,,,,
-Standard,500,String algorithms (Z algorithm),,,,
-Standard,510,"String matching (Knuth-Morris-Pratt, Rolling Hash)",,,,
-Standard,520,Aho-Corasick,,,,
-Standard,530,Suffix Automaton,,,,
-Standard,540,Suffix Arrays and Longest Common Prefix,,,,
-Standard,550,Suffix Trees,,,,
-Standard,700,Computational Geometry,,,,
-Standard,710,Line Sweep,,,,
-Standard,720,Convex Hull,,,,
-Standard,800,Discrete Math,,,,
-Standard,810,Modulo,,,,
-Standard,815,Fast Exponentiation,,,,
-Standard,820,Game Theory,,,,
-Standard,830,Cryptography,,,,
-Standard,835,Hashing,,,,
-Standard,840,Fast Fourier Transform,,,,
+Standard,020,Programming Languages,,,,2016-12-08_Programming_Language_Tips.pdf
+Standard,030,Sample I/O,,,,SCT_Sample_IO.pdf
+Standard,100,Complexity and Elementary Algorithms,,,,2018_09_21_Elementary_Algorithms.pdf
+Standard,110,Binary Search,,,,2017-11-10_Binary_Search.pdf
+Standard,200,"Lists, Stacks, Queues, Sets, Maps",,,,2020_10_09_SCT_Sets_and_Maps.pdf
+Standard,210,"Trees, Binary Search Trees",,,,2019_11_15_Trees.pdf
+Standard,220,Monotonic Queue,,,,my own lecture
+Standard,230,Disjoint-Set (Union-Find) and Minimum Spanning Tree (MST),,,,2019_10_18_Union_Find_and_MST.pdf
+Standard,240,Binary Indexed Trees (Fenwick Trees),,,,2019_11_01_Binary_Index_Trees.pdf
+Standard,250,Segment Trees and Lazy Propagation,,,,2019_11_15_Segment_Trees.pdf
+Standard,260,Heavy-light Decomposition,,,,2020_1_17_HLD.pdf
+Standard,300,Dynamic Programming (DP),,,,2017-10-27_More_Dynamic_Programming.pdf
+Standard,310,Knapsack DP,,,,2019_10_25_Knapsack_DP.pdf
+Standard,320,Bitmask DP,,,,2016-12-02_Advanced_Dynamic_Programming.pdf
+Standard,350,Greedy Algorithms,,,,Greedy_Bronze_Lecture.pdf
+Standard,400,"Graph Theory, BFS+DFS, Shortest Path",,,,2019_10_18_Graph_Theory.pdf
+Standard,415,Iterative Post-order DFS and Topological Sort,,,,2016-10-21_Recursion_and_DFS.pdf
+Standard,420,Lowest Common Ancestor,,,,2019_10_25_LCA.pdf
+Standard,430,Connected Components and Strongly Connected Components,,,,2019_11_01_Strongly_Connected_Components.pdf
+Standard,700,Line Sweep and Convex Hull,,,,2019_11_22_Computational_Geometry.pdf

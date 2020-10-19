@@ -1,8 +1,12 @@
+# ignore pdfs in source
+source/**/*.pdf
+
 # LaTeX auxiliary files
 *.aux
 *.fdb_latexmk
 *.fls
 *.out
+*.dvi
 
 # bibliography files
 *.bbl
