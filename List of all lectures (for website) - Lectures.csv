@@ -234,8 +234,12 @@ year,date,title,author,level,google_drive_id,filename
 ,,,,,,
 2020-21,2020-10-02,Orientation,SCT Officers,All,,2020_10_02_Orientation.pdf
 2020-21,2020-10-09,Standard Data Structures: Sets and Maps,ICT and SCT Officers,Beginner,,2020_10_09_SCT_Sets_and_Maps.pdf
+2020-21,2020-10-23,FFT and 2D Convolutions,Stephen Huan,Advanced,,2020_10_23_FFT.pdf
+2020-21,2020-10-23,FFT and 2D Convolutions (handout),Stephen Huan,Advanced,,2020_10_23_FFT_handout.pdf
+2020-21,2020-10-23,FFT and 2D Convolutions (presentation),Stephen Huan,Advanced,,2020_10_23_FFT_presentation.pdf
+2020-21,2020-10-23,Ad Hoc Questions,Justin Choi,Beginner,,2020_10_23_SCT_Ad_Hoc.pdf
 ,,,,,,
-Standard,000,Introduction,,,,2019_09_20_Orientation.pdf
+Standard,000,Orientation,,,,2019_09_20_Orientation.pdf
 Standard,010,Programming Contests,,,,2017-09-18_Beginners_1:_Contest_Programming_Intro.pdf
 Standard,020,Programming Languages,,,,2016-12-08_Programming_Language_Tips.pdf
 Standard,030,Sample I/O,,,,SCT_Sample_IO.pdf
