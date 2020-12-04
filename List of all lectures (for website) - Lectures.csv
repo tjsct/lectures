@@ -239,26 +239,27 @@ year,date,title,author,level,google_drive_id,filename
 2020-21,2020-10-23,FFT and 2D Convolutions (presentation),Stephen Huan,Advanced,,2020_10_23_FFT_presentation.pdf
 2020-21,2020-10-23,Ad Hoc Questions,Justin Choi,Beginner,,2020_10_23_SCT_Ad_Hoc.pdf
 2020-21,2020-10-30,"Graph Theory, BFS+DFS, Shortest Path",Pranav Mathur,Beginner,,2020_10_30_Graph_Theory.pdf
+2020-21,2020-12-04,Binary Indexed Trees,Aarav Bajaj,Advanced,,2020_12_04_Binary_Indexed_Trees.pdf
 ,,,,,,
-Standard,000,Orientation,,,,2019_09_20_Orientation.pdf
-Standard,010,Programming Contests,,,,2017-09-18_Beginners_1:_Contest_Programming_Intro.pdf
-Standard,020,Programming Languages,,,,2016-12-08_Programming_Language_Tips.pdf
-Standard,030,Sample I/O,,,,SCT_Sample_IO.pdf
-Standard,100,Complexity and Elementary Algorithms,,,,2018_09_21_Elementary_Algorithms.pdf
-Standard,110,Binary Search,,,,2017-11-10_Binary_Search.pdf
-Standard,200,"Lists, Stacks, Queues, Sets, Maps",,,,2020_10_09_SCT_Sets_and_Maps.pdf
-Standard,210,"Trees, Binary Search Trees",,,,2019_11_15_Trees.pdf
-Standard,220,Monotonic Queue,,,,my own lecture
-Standard,230,Disjoint-Set (Union-Find) and Minimum Spanning Tree (MST),,,,2019_10_18_Union_Find_and_MST.pdf
-Standard,240,Binary Indexed Trees (Fenwick Trees),,,,2019_11_01_Binary_Index_Trees.pdf
-Standard,250,Segment Trees and Lazy Propagation,,,,2019_11_15_Segment_Trees.pdf
-Standard,260,Heavy-light Decomposition,,,,2020_1_17_HLD.pdf
-Standard,300,Dynamic Programming (DP),,,,2017-10-27_More_Dynamic_Programming.pdf
-Standard,310,Knapsack DP,,,,2019_10_25_Knapsack_DP.pdf
-Standard,320,Bitmask DP,,,,2016-12-02_Advanced_Dynamic_Programming.pdf
-Standard,350,Greedy Algorithms,,,,Greedy_Bronze_Lecture.pdf
-Standard,400,"Graph Theory, BFS+DFS, Shortest Path",,,,2019_10_18_Graph_Theory.pdf
-Standard,415,Iterative Post-order DFS and Topological Sort,,,,2016-10-21_Recursion_and_DFS.pdf
-Standard,420,Lowest Common Ancestor,,,,2019_10_25_LCA.pdf
-Standard,430,Connected Components and Strongly Connected Components,,,,2019_11_01_Strongly_Connected_Components.pdf
-Standard,700,Line Sweep and Convex Hull,,,,2019_11_22_Computational_Geometry.pdf
+Standard,000,Orientation,,All,,2019_09_20_Orientation.pdf
+Standard,010,Programming Contests,,Beginner,,2017-09-18_Beginners_1:_Contest_Programming_Intro.pdf
+Standard,020,Programming Languages,,Beginner,,2016-12-08_Programming_Language_Tips.pdf
+Standard,030,Sample I/O,,Beginner,,SCT_Sample_IO.pdf
+Standard,100,Complexity and Elementary Algorithms,,Beginner,,2018_09_21_Elementary_Algorithms.pdf
+Standard,110,Binary Search,,Beginner,,2017-11-10_Binary_Search.pdf
+Standard,200,"Lists, Stacks, Queues, Sets, Maps",,Beginner,,2020_10_09_SCT_Sets_and_Maps.pdf
+Standard,210,"Trees, Binary Search Trees",,Intermediate,,2019_11_15_Trees.pdf
+Standard,220,Monotonic Queue,,Intermediate,,my own lecture
+Standard,230,Disjoint-Set (Union-Find) and Minimum Spanning Tree (MST),,Intermediate,,2019_10_18_Union_Find_and_MST.pdf
+Standard,240,Binary Indexed Trees (Fenwick Trees),,Advanced,,2019_11_01_Binary_Index_Trees.pdf
+Standard,250,Segment Trees and Lazy Propagation,,Advanced,,2019_11_15_Segment_Trees.pdf
+Standard,260,Heavy-light Decomposition,,Advanced,,2020_1_17_HLD.pdf
+Standard,300,Dynamic Programming (DP),,Intermediate,,2017-10-27_More_Dynamic_Programming.pdf
+Standard,310,Knapsack DP,,Advanced,,2019_10_25_Knapsack_DP.pdf
+Standard,320,Bitmask DP,,Advanced,,2016-12-02_Advanced_Dynamic_Programming.pdf
+Standard,350,Greedy Algorithms,,Intermediate,,Greedy_Bronze_Lecture.pdf
+Standard,400,"Graph Theory, BFS+DFS, Shortest Path",,Beginner,,2019_10_18_Graph_Theory.pdf
+Standard,415,Iterative Post-order DFS and Topological Sort,,Intermediate,,2016-10-21_Recursion_and_DFS.pdf
+Standard,420,Lowest Common Ancestor,,Advanced,,2019_10_25_LCA.pdf
+Standard,430,Connected Components and Strongly Connected Components,,Advanced,,2019_11_01_Strongly_Connected_Components.pdf
+Standard,700,Line Sweep and Convex Hull,,Advanced,,2019_11_22_Computational_Geometry.pdf
