@@ -240,7 +240,8 @@ year,date,title,author,level,google_drive_id,filename
 2020-21,2020-10-23,Ad Hoc Questions,Justin Choi,Beginner,,2020_10_23_SCT_Ad_Hoc.pdf
 2020-21,2020-10-30,"Graph Theory, BFS+DFS, Shortest Path",Pranav Mathur,Beginner,,2020_10_30_Graph_Theory.pdf
 2020-21,2020-12-04,Binary Indexed Trees,Aarav Bajaj,Advanced,,2020_12_04_Binary_Indexed_Trees.pdf
-2020-21,2020-12-11,Introduction to Dynamic Programming,Pranav Mathur,Beginner,,2020_12_11_Introduction_DP.pdf
+2020-21,2020-12-11,Introduction to Dynamic Programming,Pranav Mathur,Intermediate,,2020_12_11_Introduction_DP.pdf
+2020-21,2020-12-11,Greedy Algorithms,Justin Choi,Beginner,,2020_12_11_Greedy.pdf
 ,,,,,,
 Standard,000,Orientation,,All,,2019_09_20_Orientation.pdf
 Standard,010,Programming Contests,,Beginner,,2017-09-18_Beginners_1:_Contest_Programming_Intro.pdf
