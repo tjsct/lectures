@@ -1,0 +1,193 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[legalpaper, portrait, margin=1in]{geometry}
+\usepackage[section]{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{hyperref}
+\newcommand{\nl}[]{\newline}
+
+
+\title{Introduction to Dynamic Programming}
+\author{Pranav Mathur \\ Based on Daniel Wisdom's Lecture}
+\date{December 11th, 2020}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\emph{"Those who cannot remember the past are condemned to repeat it"}
+- George Santayana
+\end{center}
+\section{Introduction}
+Dyanamic programming is an extremely powerful technique that can greatly reduce the time complexities of your solutions. It is heavily tested in the Gold and Platinum divisions of USACO and shows up in nearly every other programming contest.
+\subsection{Example - Fibonacci Numbers}
+To illustrate the power of dynamic programming, let's look at a classic application - finding the $n$th Fibonacci number. Recall that the Fibonacci sequence is a recursive sequence with $F_0=0$, $F_1=1$, and, for $n\geq 2$, $F_n = F_{n-1} + F_{n-2}$. This definition motivates the following recursive solution.
+\begin{algorithm}[H]
+\caption{Fibonacci - Naïve}
+\begin{algorithmic}
+\Function{fib}{$n$}
+    \If{$n = 0$ or $n = 1$}
+        \State{\textbf{return} $n$}
+    \Else
+        \State{\textbf{return} \Call{fib}{$n - 1$} + \Call{fib}{$n - 2$}}
+    \EndIf
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+\noindent This solution runs in $O(2^n)$ time since for each call to the function, we make two more recursive calls. To see how to speed this up, let's look at an example. Say we want to compute $F_{10}$. we call $FIB(10)$, which calls $FIB(9)$ and $FIB(8)$. Then, $FIB(9)$ calls $FIB(8)$ and $FIB(7)$. Note that we call $FIB(8)$ twice, even though the value returned from both calls is the same!\nl\nl
+To solve this problem, we maintain an array that keeps track of all the values of all the Fibonacci numbers we have already calculated.
+\begin{algorithm}[H]
+\caption{Fibonacci - Top-Down Dynamic Programming}
+\begin{algorithmic}
+\State{\textbf{initialize} $dp[0\ldots n] \leftarrow -1$}
+\Function{fib}{n}
+    \If{$dp[n] \neq 0$}
+        \State{\textbf{return} $dp[n]$}
+    \EndIf
+    \If{$n = 0$ or $n = 1$}
+        \State{\textbf{return} $n$}
+    \Else
+        \State{$dp[n] \leftarrow$ \Call{fib}{$n - 1$} + \Call{fib}{$n - 2$}}
+        \State{\textbf{return} $dp[n]$}
+    \EndIf
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+\noindent This solution reduces the runtime of the recursive solution from $O(2^n)$ to $O(n)$ since each $F_n$ is only computed once. This is an enormous improvement and illustrates the power of dynamic programming. However, there is still another improvement we can make. Using recursion comes with an overhead cost due to several function calls. We can eliminate this overhead by computing $F_n$ from the "bottom-up" instead of "top-down" (see sections 2.2 and 2.3). This means we start with $F_0$ and $F_1$, then compute $F_2$, then $F_3$, and so on until we get $F_n$.
+\begin{algorithm}[H]
+\caption{Fibonacci - Bottom-Up Dynamic Programming}
+\begin{algorithmic}
+\Function{fib}{$n$}
+    \State{\textbf{initialize} $dp[0\ldots N]$}
+    \State{$dp[0] \leftarrow 0$}
+    \State{$dp[1] \leftarrow 1$}
+    \For{$i \leftarrow 2 \ldots n$}
+        \State{$dp[i] \leftarrow dp[i - 1] + dp[i - 2]$}
+    \EndFor
+    \State{\textbf{return} $dp[n]$}
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+\noindent By using dynamic programming, we have reduced a $O(2^n)$ recursive solution to a $O(n)$ solution with no recursive overhead. In general, DP reduces the time complexities of problems from exponential to polynomial.
+\section{How Do I Use Dynamic Programming?}
+\subsection{When to Use DP}
+The Fibonacci numbers problem has some important properties that are critical to our ability to apply a DP solution. First, recall that our call to $FIB(10)$ led to multiple calls of $FIB(8)$ (and $FIB(7)$, $FIB(6)$,$\ldots$) that all had the same answer. This property is known as \emph{overlapping subproblems}.\nl\nl
+Now, remember that in our iterative solution, we used the solutions to $FIB(1\ldots 9)$ to calculate $FIB(10)$. This property is called \emph{optimal substructures}.\nl\nl
+Together, these properties form the criteria for applying dyanmic programming to a problem. Here they are again, written in general terms.
+\begin{itemize}
+    \item \textbf{overlapping subproblems} - solutions to subproblems with the same state variables (see section 4) are used repeatedly.
+    \item \textbf{optimal substructures} - solutions to subproblems are part of the solution to the original problem.
+\end{itemize}
+There are generally two approaches to coding DP solutions, which are covered in the next two sections.
+\subsection{Top-Down DP}
+Top-down DP involves implementing a recursive solution and maintaining a table with already-computed values. This method is also called \emph{memoization}.\nl\nl
+\textbf{Advantages}
+\begin{itemize}
+    \item Only computes subproblem solutions that are necessary for solving the original problem.
+    \item Easier to understand conceptually when starting out.
+\end{itemize}
+\textbf{Disadvantages}
+\begin{itemize}
+    \item Overhead due to recursion.
+    \item Code is generally longer.
+\end{itemize}
+\subsection{Bottom-Up DP}
+Bottom-up DP involves computing subproblems iteratively in a way that all previous values needed to compute the current value have already been computed. To illustrate, in the Fibonacci example, we used bottom-up DP when we computed $FIB(1\ldots N - 1)$ before trying to compute $FIB(N)$.\nl\nl
+\textbf{Advantages}
+\begin{itemize}
+    \item Good when many subproblems are revisited, since there is no overhead due to recursion.
+    \item Opportunities for memory optimization, such as sliding-window trick.
+    \item Code is generally shorter and cleaner.
+\end{itemize}
+\textbf{Disadvantages}
+\begin{itemize}
+    \item May compute unecessary subproblems.
+\end{itemize}
+Both these approaches have the same time complexity, and which one you use is largely a matter of preferences, but keep in mind the above advantages and disadvantages when deciding between the two.
+\section{Knapsack Problem}
+The knapsack problem is a canonical DP problem with many varieties and is tested often in the USACO Gold and Platinum Divisions. When reading through the following sections, try to understand the motivations and broader ideas of DP so you can apply them to other problems.
+\subsection{0-1 Knapsack Problem}
+Suppose you have a knapsack with a maximum weight capacity of $M$ and you want to fill it up with objects. You have $N$ distinct objects, and the $k$th object has a value $v_k$ and a weight $w_k$. What combination of objects should you choose so that you maximize the value of the objects in your knapsack while staying within the weight limit?\nl\nl
+Your first impulse may be to try a greedy solution in which you pick objects in order of their value. However, it is quite easy to find an example that breaks this solution (Try $M=7$, $N=3$ and the (value, weight) pairs of the objects are $(7, 7)$, $(5, 5)$, and $(3, 2)$). When greedy doesn't work, we try DP.\nl\nl
+The first step to solving any DP problem is to decide what variables we will use to define our states. This is generally the most difficult step. To start, let's think about what happens when we add item $N$ to the knapsack. If the knapsack is empty, then the remaining capacity of the knapsack is now $M - w_N$ and the value of the knapsack is $v_N$. Now, since we have used item $N$, we must now fill a weight of $M - w_N$ with the remaining items. This problem is analogous to maximizing the value of a knapsack with capacity $M - w_N$ with objects $1\ldots N-1$. Aha! We have discovered optimal substructures.\nl\nl
+What about overlapping subproblems? Note that we may get to the problem of filling a knapsack with weight $m < M$ using objects $1\ldots k$ in multiple ways (try thinking of some examples). Thus the overlapping subproblems condition is satisfied.\nl\nl
+Now, lets outline a solution. Since our states are defined by the capacity of the knapsack and the objects we can choose from, let's define $dp[k][m]$ as the maximum value we can obtain in a knapsack with weight capacity $m$ with objects $1\ldots k$. We define our state in this way so that we can easily transition to subproblems by choosing either to skip object $k$ or to add it. Our recurrence relation is then $dp[k][m] = max(dp[k-1][m], dp[k-1][m-w[k]]+v[k])$. Before we start coding, let's determine our base cases for recursion. Clearly, $dp[k][0]=0$ for all $k$ and $dp[0][m]=0$ for all $m$. These cases are where we terminate our top-down solution or begin our bottom-up solution.
+\begin{algorithm}
+\caption{0-1 Knapsack Problem Top-Down Solution}
+\begin{algorithmic}
+\State{\textbf{initialize} $dp[1\ldots N][0\ldots M] \leftarrow -1$}
+\State{$dp[1\ldots N][0] \leftarrow 0$}
+\State{$dp[0][0\ldots M] \leftarrow 0$}
+\Function{knapsack}{$k$, $m$}
+    \If{$k=0$ or $m=0$} \Comment{No more objects or knapsack is full}
+        \State{\textbf{return} 0}
+    \EndIf
+    \If{$dp[k][m]\neq -1$} \Comment{Already computed this subproblem}
+        \State{\textbf{return} $dp[k][m]$}
+    \EndIf
+    \If{$w[k] > m$} \Comment{Can't fit object $k$}
+        \State{$dp[k][m]=\Call{knapsack}{k-1, m}$} \Comment{Skip object $k$}
+    \Else
+        \State{$dp[k][m]=max(\Call{knapsack}{k-1, m}, \Call{knapsack}{k-1, m-w[k]}+v[k])$}
+    \EndIf
+    \State{\textbf{return} $dp[k][m]$}
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+\begin{algorithm}
+\caption{0-1 Knapsack Problem - Bottom-Up Solution}
+\begin{algorithmic}
+\State{\textbf{initialize} $dp[1\ldots N][0\ldots M] \leftarrow -1$} \Comment{Final answer will be in $dp[N][M]$}
+\State{$dp[1\ldots N][0] \leftarrow 0$}
+\State{$dp[0][0\ldots M] \leftarrow 0$}
+\For{$k$ from $1\ldots N$} \Comment{Compute solution for items $1\ldots k-1$ before $1\ldots k$}
+    \For{$m$ from $1\ldots M$}
+        \State{$dp[k][m]=dp[k-1][m]$} \Comment{Applies to all objects}
+        \If{$w[k]\leq m$} \Comment{Can fit object $k$}
+            \State{$dp[k][m]=max(dp[k-1][m], dp[k-1][m-w[k]]+v[k])$}
+        \EndIf
+    \EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+\nl\noindent Note that both solutions have the same time complexity of $O(NM)$, but the top-down solution is somewhat be easier to understand, while the bottom-up solution has shorter code. It's up to you which one to use.
+\subsection{Unbounded Unordered Knapsack Problem}
+This variant of the knapsack problem is very similar to the 0-1 variant, but instead of having $N$ distinct objects, we have $N$ distinct \emph{types} of objects and an unlimited supply of each type (hence the name "unbounded"). The order in which the objects are placed into the knapsack does not matter.\nl\nl
+The solution to this problem is nearly identical to the solution to the 0-1 problem, but with one distinction. Note that since we can add an object of type $k$ as many times we we want, instead of transitioning to state $dp[k-1][m-w[k]]$, we transition to state $dp[k][m-w[k]]$, since object $k$ is still available to us. Thus, our recurrence relation is $dp[k][m] = max(dp[k-1][m], dp[k][m-w[k]]+v[k])$.\nl\nl
+I will omit pseudocode for the top-down approach, since it is nearly identical to the 0-1 top-down solution. However, there is a clever memory optimization we can make to the bottom-up approach. Note that as we are iterating through $0\ldots M$, we only need to access values to the left of the current index in the same row ($dp[k][m-w[k]]$) and the value at the current index in the previous row ($dp[k-1][m]$). We never use the values in $dp[1\ldots k-1][0\ldots m-1]$ again. With this observation in mind, I claim that instead of maintaining a $dp[1\ldots N][0\ldots M]$, we only need to maintain $dp[0\ldots M]$ and we can update this array in each iteration. Our recurrence in code will then be $dp[m] = max(dp[m], dp[m-w[k]])$. To see why this is true, note that we have already computed $dp[m]$ for all values of $m$ to the left of the current index for the current $k$. Thus, this range represents $dp[k][0\ldots m-1]$ in our previous solution. Anything at or after our current index has not been computed, so it represents $dp[k-1][m\ldots M]$ in our previous solution. Thus, all the information we need can be stored in the one-dimensional DP array.
+\begin{algorithm}
+\caption{Bottom-Up Unbounded Knapsack Solution with Memory Optimization}
+\begin{algorithmic}
+\State{\textbf{initialize} $dp[0\ldots M] \leftarrow 0$} \Comment{Final answer will be in $dp[M]$}
+\For{$k$ from $1\ldots N$}
+    \For{$m$ from $1\ldots M$}
+        \If{$w[k] \leq m$}
+            \State{$dp[m]=max(dp[m], dp[m-w[k]]+v[k])$}
+        \EndIf
+    \EndFor
+\EndFo
+\end{algorithmic}
+\end{algorithm}
+\nl\nl\nl\noindent This example demonstrates how bottom-up approaches can allow for clever optimzations that streamline your code.
+\subsection{Application - Subset Sum}
+In this problem, you are given the set of positive integers ${1, 2, \ldots, N}$ and are asked to divide it into two sets with equal sum.\nl\nl
+First, note that if the sum of the integers from $1\ldots N$ is odd, such a separation is impossible. If the sum is even, each subset will have sum $S=\frac{N(N+1)}{4}$. Thus, our problem is reduced to finding the number of ways to choose a subset of ${1, 2,\ldots N}$ that adds up to $S$.\nl\nl
+This problem can be solved using a variant of the 0-1 knapsack problem. It differs from the problem in section 3.1 since instead of finding the maximum possible value of the knapsack, we are asked to find the number of ways to fill the knapsack. Note that we can either choose to ignore a number $k$, leaving us with the numbers $1\ldots k-1$ tog get a sum of $s$, or add a $k$ to our subset, leaving us with the numbers $1\ldots k-1$ to get a sum of $s-k$. Thus, our recurrence relation is $dp[k][s]=dp[k-1][s] + dp[k-1][s-k]$. Again, the code for this problem is nearly identical to the code in section 3.1.
+\section{General Strategy}
+\begin{enumerate}
+    \item \textbf{Identify state variables} - These can be thought of as the arguments passed into the recursive solution. Generally, the more state variables you have, the slower your solution will be. For example, if the problem you are solving is $f(a, b, c)$, with $a$ from $0 \ldots A$, $b$ from $0 \ldots B$, and $c$ from $0 \ldots C$, then the time complexity of a bottom-up solution is $O(ABC)$.
+    \item \textbf{Write recurrence relation} - Yes. "Write" it. On paper. Since DP code is generally very simple and difficult to discern the problem from, working out full DP states and transitions on paper can be \emph{extremely} helpful in making sure you have the correct solution to your specific and anticipating bugs before you code.
+    \item \textbf{Determine base cases} - DP solves recursive problems, so there will be a base case.
+    \item \textbf{Code} - This is generally the fastest part of solving a DP problem. Make sure you code base cases correctly and pay attention to indexing and order of nested loops.
+\end{enumerate}
+\section{Practice Problems}
+The only way to get good at DP problems is to, and I cannot stress this enough, PRACTICE. The following resources offer excellent problems to apply your new DP skills :))
+\begin{itemize}
+    \item \href{https://usaco.guide/gold/intro-dp}{USACO Guide Introduction to DP} - https://usaco.guide/gold/intro-dp
+    \item \href{https://usaco.guide/gold/knapsack}{USACO Guide Knapsack Problem} - https://usaco.guide/gold/knapsack
+    \item \href{https://cses.fi/problemset/}{CSES Dynamic Programming Problems} (also linked in USACO Guide) - https://cses.fi/problemset/
+    \item \href{https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp}{Codeforces DP Problems} - https://codeforces.com/problemset?order=BY\_RATING\_ASC&tags=dp
+\end{itemize}
+
+\end{document}
