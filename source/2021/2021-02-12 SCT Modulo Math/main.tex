@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\title{SCT Modular Math}
+\author{Andrew Wang}
+\date{February 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+    \hspace{1em} \quad Modular Arithmetic works with remainders instead of integers. For example,
+    $$
+    9 \bmod 5 = 4
+    $$
+    since the remainder of $9$ divided by $5$ is $4$.
+    In contests, you'll often see modular arithmetic used to avoid dealing with large numbers that overflow. 
+\subsection{Modular Arithmetic Properties}
+    \hspace{1em} \quad Some common properties in modular arithmetic:
+        $$
+        (a+b) \bmod m = (a \bmod m + b \bmod m) \bmod m
+        $$
+        
+        $$
+        (a-b) \bmod m = (a \bmod m - b \bmod m) \bmod m
+        $$
+        
+        $$
+        (a \cdot b) \pmod{m} = ((a \bmod m) \cdot (b \bmod m)) \bmod m
+        $$
+        
+        $$
+        a^b \bmod {m} = (a \bmod m)^b \bmod m
+        $$
+\section{Optimizations}
+    \hspace{1em} \quad Taking the modulo of a number over and over again can be very time-costly due to the high constant factor.
+    \subsection{Pre-Calculation}
+        \hspace{1em} \quad If we're taking the modulo of some set of numbers over and over again(i.e powers of numbers), it may be faster to pre-calculate the modulo of each of these numbers beforehand.
+    \subsection{Addition and Subtraction}
+        \hspace{1em} \quad Since the $\%$ operator has a much higher constant factor compared to more elementary operators like addition or subtraction, always use addition and subtraction when you have the choice. For example,
+        $$
+            9 \bmod 5 = 9-5.
+        $$
+\section{Tips \& Tricks}
+    \begin{itemize}
+        \item Take the modulo of each number before performing operations to prevent overflow.
+        \item While debugging, if you come across a negative number it almost always means overflow.
+    \end{itemize}
+\section{Euler's Totient Theorem}
+\hspace{1em} \quad Euler's Totient Function is commonly seen in number theory. It states:
+    $$
+    a^{ \varphi (n)} = 1 \bmod n.
+    $$
+\subsection{Fermat's Little Theorem}
+    \hspace{1em} \quad Fermat's Little Theorem is an extensions of Euler's Totient where $n$ is a prime number. This simplifies to:
+    $$
+        a^{p-1} = 1 \bmod p
+    $$
+    where $p$ is any prime.
+    \subsection{Modular Inverse}
+        \hspace{1em} \quad Dividing can be very difficult while in some mod $n$. For example,
+        $$
+        (9/3) \bmod 5 \neq ((9 \bmod 5)/(3 \bmod 5)) \bmod 5
+        $$
+        Luckily, using modular inverses, we can safely divide numbers without worrying about mistakes during division. The modular inverse of a number is equivalent to the reciprocal but in a certain mod. 
+        $$
+        a/b \bmod m = a*i \bmod m
+        $$
+        where i is the modular inverse of b. The modular inverse of $b \bmod m$, is equivalent to $b^{m-1} \bmod m$ since by Fermat's:
+        $$
+        b^{m-1} \bmod m \equiv 1 \bmod m
+        $$
+        if m is prime. Finding $b^{m-1}$ is a much simpler task which can be solved using \href{https://cp-algorithms.com/algebra/binary-exp.html}{binary exponentiation} or pre-calculating the powers of a number as mentioned before.
+    \subsection{Example Problem: \href{https://cses.fi/problemset/task/1079}{Binomial Coefficients}}
+        \hspace{1em} \quad
+        \begin{enumerate}
+            \item Pre-calculate factorials in an array
+            \item $\frac{a!}{b!(a-b)!} \bmod m = a! \cdot inverse(b!) \cdot inverse((a-b)!) \bmod m$
+            \item calculate the inverses using binary exponentation
+        \end{enumerate}
+\section{Miscellaneous}
+    Sometimes, problem-setters mess up!
+    \subsection{Challenge Problem: \href{http://www.usaco.org/index.php?page=viewproblem2&cpid=946}{USACO Gold walk}}
+    \hspace{1em} \quad Although the intended solution is an $O(N^2)$ MST, this can be easily fake-solved in $O(1)$ using some modular arithmetic. The general idea is to maximize the function:
+        $$
+        \min\limits_{x,y \, \textrm{in different groups}} (2019201997 - 84 x - 48 y).
+        $$
+    This can be done by placing the smallest $k-1$ in their own distinct group and the other larger numbers together in one group. Simplifying gives us the equation:
+    $$
+    2019201997 - 84 (k-1) - 48 n
+    $$
+    (For a full proof check out the \href{https://usaco.guide/solutions/usaco-946}{full solution})
+\section{Resources}
+    \subsection{References}
+    \begin{itemize}
+        \item \href{https://usaco.guide/gold/modular}{USACO Guide Modular Arithmetic}
+        \item \href{https://usaco.guide/CPH.pdf#page=211}{CPH Modular Math}
+    \end{itemize}
+        
+    \subsection{Problens}
+        \begin{itemize}
+            \item \href{https://usaco.guide/gold/modular}{USACO Guide Problem set} (At the end of the page)
+        \end{itemize}
+
+\end{document}
