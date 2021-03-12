@@ -1,0 +1,204 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath,amssymb,amsfonts,hyperref,csquotes,listings}
+
+\title{Linear Programming}
+\author{Alvan Caleb Arulandu}
+\date{March 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Linear programming is a topic that doesn't appear frequently in competitive programming.
+The first notable mention was in the ACM ICPC World Finals 2016 Problem I with only one solver.
+However, the concepts behind linear programming are quite fascinating to learn; hence this lecture.
+
+\section{Optimization}
+\subsection{Problems}
+In general, an optimization problem involves finding the best solution from a finite or infinte set of
+feasible solutions. A number of optimization problems are famously NP-hard (ex. the traveling salesman problem).
+Others are NP-complete (ex. halting problem).
+
+\subsection{Descent}
+Gradient descent and stochastic gradient descent have been recently popularised with the growth of machine learning.
+In fact, these methods of descend are first-order iterative optimization algorithms; these algorithms use the gradient
+of a differentiable function to iteratively step towards the relative direction of a local minimum. 
+Despite novel improvements and fine tuning with hyperparameters, these algorithms can not guarantee the finding of a
+global minimum.
+
+\section{The Linear Programming Problem}
+A much simpler problem can be solved in polynomial time. The linear problem involves optimizing a linear objective
+function with linear equality and inequality constraints. 
+
+\subsection{A Simple Case}
+For simplicity, let's start with $N=2$ dimensions. We can picture the input space as the cartesian space and a linear function
+$$f(x,y)=ax+by$$
+that we want to optimize.
+Now suppose, we want to optimize this function over some region defined by a set of inequalities of the form
+$$cx+dy\geq q$$
+Note the equality here is important. A viable set of equalities (\textbf{constraints}) for the problem will define a closed region in
+the shape of a polygon known as a \textbf{polytope} (not this is not a domain). Linear programming algorithms 
+aim to find the maximum value of $f$ on this \textbf{feasible region}.
+
+\subsection{Expanding to Higher Dimensions}
+To clarify, suppose we are given a function $f$ that we want to optimize over a region that will be defined later. 
+Since $f$ is a (multivariable) linear function, we can express it as the following:
+$$f(x_{1}, x_{2}, \cdots x_{n})=w_{1}x_{1}+w_{2}x_{2}+\cdots+w_{n}x_{n}$$
+Note that $f$ is a scalar field mapping an $N$ dimensional space to a scalar value (cost).
+Using a more compact vector notation using the dot product,
+$$f(\vec{x})=\vec{w}\cdot\vec{x}$$
+This function is known as a \textbf{linear objective function}. An objective function is a function that defines some 
+scalar quantity that should be optimized.
+\subsection{Canonical Form}
+Maximize $\mathbf{c}^{\mathbf{T}}\mathbf{x}$ subject to $A\mathbf{x}\leq\mathbf{b}$ and $\mathbf{x}\geq 0$.
+\section{Naive Solutions}
+Consider the following simple linear programming problem. 
+\begin{displayquote}
+    A factory manufactures doodads and whirligigs. It costs \$2 and takes 3 hours to produce a doodad.
+    It costs \$4 and takes 2 hours to produce a whirligig. The factory has \$220 and 150 hours this week
+    to produce these products. If each doodad sells for \$6 and each whirligig sells for \$7,
+    then how many of each product should be manufactured this week in order to maximize profit?
+\end{displayquote}
+\subsection{A Naive Solution}
+Picking this problem apart, we can see 4 constraints,
+$$2x+4y\leq 220$$
+$$3x+2y\leq 150$$
+$$x\geq 0$$
+$$y\geq 0$$
+Graphing this we can see our polytope. A naive approach would be to randomly test ordered pairs in the feasible region.
+\subsection{A Useful Insight}
+However, we can use a better method. Let $P$ be the maximum profit in the region.
+$$P=p(x,y)=4x+3y$$
+Solving for one variable gives the line,
+$$y=-\frac{4}{3}x+\frac{P}{3}$$
+Now, we can graph these lines for different values of P and all points on the line and in the region are plausible solutions.
+Testing, we can see that the optimal solution passes through a vertex. Indeed, this is true {\it for all} linear programming problems.
+\subsection{A Better Naive Solution}
+So, naturally we can come up with a solution:
+\begin{enumerate}
+    \item Find the vertices of the polytope defined by the constraints.
+    \item Iterate through each vertex and evaluate $f$ at this vertex.
+    \item Maximize the above value for all vertices, computing the optimal vertex.
+\end{enumerate}
+But, we face some problems here. How do we find the vertices that are in the polytope? 
+Are intersections always on the perimeter of the polytope?
+
+\section{The Simplex Algorithm}
+The simplex algorithm is perhaps the biggest competitive programming takeaway from linear programming.
+It is a nondeterministic method of solving the linear programming problem. It starts at a vertex of the 
+region and moves iteratively to adjacent vertices where the evalutation of the function is non-decreasing
+until the optimal solution is found.
+\subsection{Process}
+We start by redefining the constraints into equalities using \textbf{slack variables}. 
+$$ax+by\leq c\Rightarrow ax+by+s=c$$
+Next we turn our objective function into a equality by introducing another variable,
+$$z-f(z)=0$$
+Here we can see that the number of variables is usually greater than the number of equations (so no it's not just Cramer's Rule).
+Instead we can use a linear algebra technique: \textbf{matrix augmentation}. The slack variables (have zero coefficients in the row)
+are known as \textbf{basic variables} and the others are known as \textbf{non-basic variables}. The \textbf{basic solution} is given
+by setting all non-basic variables to 0. A \textbf{pivot} is performed on a nonzero \textbf{pivot element} in a nonbasic column.
+The exact pivoting rules are ommited due to the number of steps to prevent cycles.
+
+\subsection{Algorithm for Maximization}
+\begin{lstlisting}[language=Python]
+def setup():
+    make_equalities()
+    generate_matrix()
+
+def simplex_algo():
+    while True:
+        select_variable()
+        # Select a pivot row by minimizing the ratio of
+        # the augmented elemnt to the target element.
+        # This ratio must be positive.
+        select_row()
+        pivot()
+        if all_coeffs_positive():
+            break
+        else:
+            continue
+
+def run_algo():
+    setup()
+    simplex_algo()
+    
+\end{lstlisting}
+\subsection{Note}
+The simplex method only works for minimum or maximum constraints, not a mix as the basic solution is not obtainable.
+Note that a number of additional steps need to be added to prevent cycles.
+
+\subsection{Big-M method}
+The Big-M method is a modification to the simplex method that allows the simplex method to work with a mix of constraints.
+It is used to move an infeasible basic solution to a feasible one using \textbf{aritificial variables}. The idea is to take
+the infeasible constraint and add a aritificial variable $a_{1}$ with a large coefficient $M$ representing an
+arbitrarily large constant amount. This allows us to pivot to get a valid basic position.
+
+\begin{lstlisting}[language=Python]
+def big_M_simplex_algo():
+    add_artificial_vars()
+    minimize_to_maximize()
+    move_solution()
+    simplex_algo()
+
+def run_algo_2():
+    setup()
+    big_M_simplex_algo()
+
+\end{lstlisting}
+
+\subsection{Complexity}
+The algorithms has been showed to solve "random" and practical problems in cubic steps.
+There does exist a family, \textbf{Klee-Minty cubes}, that cause exponential steps. 
+
+\section{Interior Point Algorithms}
+Unlike the simplex method which traverses edges between vertices, interior-point methods
+move through the interior of the region.
+\subsection{Ellipsoid Algorithm}
+The Ellipsoid algorithm was the first to have a defined worst-case polynomial time which runs in $O(n^{6}L)$
+where $n$ is the number of variables and $L$ is the number of input bits.
+\subsection{Modern Day Algorithm}
+Recently, (2019) a algorithm using matrix multiplication has been shown to have a $O(n^{2+\frac{1}{18}}L)$ complexity.
+
+\section{Duality}
+The \textbf{dual} of a linear program (LP) is another LP derived from a \textbf{primal} LP such that
+each variable in the primal LP becomes a constraint, every constraint becomes a variable, and 
+objective direction is inversed.
+\subsection{Weak Duality}
+The objective value of a dual LP at any feasible solution is the bound on the objective of the primal LP.
+\subsection{Strong Duality}
+If the primal LP has an optimal solution, the dual does as well for the same value.
+\subsection{Uses}
+The dual problem is sometimes easier to solve (only works for "non-mixed" constraints in LP). Additionally,
+in machine learning, the dual problem is often solved instead to reduce complexity and computation time.
+
+\section{Applications}
+Linear programming is widely used as many problems can be simplified to linear programming problems. Network flow problems 
+are specialized linear programming problems. Additionally, study into linear programming algorithms has pushed the limitations of
+optimization theory: duality, decomposition, and copmlexity.
+
+\section{Cool Stuff}
+\subsection{Quadratic Programming}
+If you are interested in gradient descent and machine learning algorithms, check out a related topic known as \textbf{quadratic programming}.
+\subsection{Klee-Minty Cube}
+The cube for which the simplex method has a exponential complexity is given as follows:
+$$x_{1}\leq 5$$
+$$4x_{1}+x_{2}\leq 25$$
+$$\vdots$$
+$$2^{D}x_{1}+2^{D-1}x_{2}+\cdots+x_{D}\leq 5^{D}$$
+$$x_{1}\geq,\cdots x_{D}\geq 0$$
+The simplex algorithm visits all vertices of the deformed cube $2^{D}$ in the worst case.
+
+\section{Sources}
+\begin{itemize}
+    \item Advanced Algorithms (Codeforces): \url{https://codeforces.com/blog/entry/47511}
+    \item Linear Programming (Wikipedia): \url{https://en.wikipedia.org/wiki/Linear_programming}
+    \item Linear Programming (MIT OCW): \url{https://www.youtube.com/watch?v=feb9j65Iz4w}
+    \item Linear Programming (Brilliant): \url{https://brilliant.org/wiki/linear-programming/}
+    \item Dual Linear Programs (Wikipedia): \url{https://en.wikipedia.org/wiki/Dual_linear_program}
+    \item Klee-Minty Cube (Wikipedia): \url{https://en.wikipedia.org/wiki/Klee%E2%80%93Minty_cube}
+\end{itemize}
+
+\end{document}
